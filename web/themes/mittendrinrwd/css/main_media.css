@@ -1,0 +1,402 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : 2015-10-30, 08:14:52
+    Author     : eddi
+*/
+
+@media screen and (min-width: 1200px) {
+    .navbar-default .logo-description {
+
+    }
+
+    footer .container-bottom-cms h3 a {
+        float: left;
+        width: 100%;
+        text-align: left;
+    }
+
+    .container-gallery .image {
+        max-width: 800px;
+        margin: 0 auto;
+    }
+
+    .container-gallery-thumbs {
+        width: 700px;
+    }
+
+    .gallery-nav-mobile {
+        display: none !important;
+    }
+}
+
+@media screen and (max-width: 1200px) {
+
+    /*.navbar-default .logo-description {*/
+        /*text-align: center;*/
+        /*left: 40%;*/
+    /*}*/
+
+
+    .yt_movies_list {
+
+    }
+
+    .yt_movies_list .row .img-container {
+        width: 104.1%;
+    }
+
+    .gallery-nav {
+        display: none !important;
+    }
+}
+
+@media screen and (max-width: 1199px) {
+    .navbar-default .logo-description {
+        left: 40%;
+    }
+
+    .nav-cms {
+        margin-top: 84px;
+    }
+    .container-post .post-row .box {
+        width: 400px;
+        margin: 0 auto;
+        position: relative;
+    }
+
+    .container-post .post_list .catalog-title {
+        left: 0px;
+        right: 0px;
+    }
+
+    .post-sidebar .post_catalog_sidebar {
+        padding-left: 0px;
+    }
+
+    .post_premium {
+        display: none;
+    }
+
+    .yt_movies_list .row .bottom-line {
+        width: 85%;
+    }
+
+    #blockContainer {
+        display: -webkit-box;
+        display: -moz-box;
+        display: box;
+
+        -webkit-box-orient: vertical;
+        -moz-box-orient: vertical;
+        box-orient: vertical;
+    }
+    #blockA {
+        -webkit-box-ordinal-group: 2;
+        -moz-box-ordinal-group: 2;
+        box-ordinal-group: 2;
+    }
+    #blockB {
+        -webkit-box-ordinal-group: 1;
+        -moz-box-ordinal-group: 1;
+        box-ordinal-group: 1;
+    }
+}
+
+@media screen and (max-width: 991px) {
+    .navbar-collapse {
+        display: none;
+    }
+
+    .navbar .nav-cms a {
+        font-size: 15px;
+    }
+
+    .navbar .navbar-brand img {
+        height: 117px;
+        top: 13px;
+        position: absolute;
+    }
+
+    .navbar-toggle {
+        display: block !important;
+        left: 5px;
+    }
+
+    .nav-cms {
+        margin-top: 41px;
+        width: 100%;
+        margin-right: -12px;
+        border-left: 2px solid #363638;
+        border-bottom: 2px solid #363638;
+        border-right: 2px solid #363638;
+        float: left;
+    }
+
+    .gallery-desktop {
+        display: none !important;
+    }
+
+    .gallery-mobile {
+        display: block;
+    }
+
+    .container-gallery-info a.previus-page {
+        margin-top: 10px;
+        float: left;
+    }
+
+    .gallery-info {
+        margin-top: 10px;
+        float: right;
+    }
+
+    .container-gallery-info h1 {
+        margin-top: 15px;
+        margin-bottom: 15px;
+    }
+
+    .gallery-nav-mobile .gallery-nav-btn-left {
+        margin-bottom: 20px;
+    }
+}
+
+@media screen and (max-width: 991px) {
+    .navbar .navbar-brand {
+        position: absolute;
+        top: 6px;
+        margin-left: auto;
+        margin-right: auto;
+        left: 0;
+        right: 0;
+    }
+
+    .navbar .navbar-brand img {
+        height: 116px;
+        margin-left: auto;
+        margin-right: auto;
+        left: 0;
+        right: 0;
+    }
+
+    .navbar .navbar-toggle {
+        right: 83%;
+    }
+
+    .navbar-default {
+        height: 164px;
+    }
+
+    .navbar-lang {
+        position: absolute;
+        top: 8px;
+        right: 10px;
+        /*padding-left: 10px;*/
+        /*width: 50%;*/
+    }
+
+    .nav-cms {
+        margin-top: 41px;
+        width: 100%;
+        margin-right: -12px;
+        border-left: 2px solid #363638;
+        border-bottom: 2px solid #363638;
+        border-right: 2px solid #363638;
+        float: left;
+    }
+
+    .nav-cms li {
+        background-color: #FFFFFF;
+        z-index: 1;
+    }
+
+    .nav-cms li a .caret {
+        display: none;
+    }
+
+    .container-radio .post-homepage-header-title {
+        text-align: center;
+        margin-top: 12px;
+    }
+
+    .container-radio .radio-online {
+        float: none;
+        width: auto;
+    }
+
+    .navbar-default .logo-description {
+        top: 135px;
+        left: 0px;
+        width: 100%;
+        text-align: center;
+    }
+
+    .container-post-homepage .btn-mittendrin-gray {
+        width: 100%;
+    }
+
+    .container-social {
+        min-height: 100px;
+    }
+
+    .container-social .visible-xs {
+        margin-bottom: 25px;
+    }
+
+    .container-partners .logo {
+        padding-left: 0px;
+    }
+
+    .container-partners .logo li {
+        padding-right: 0px;
+        margin-bottom: 30px;
+    }
+
+    .cms-view {
+        margin: 15px;
+    }
+
+    .cms-view .radio-station {
+
+    }
+
+    .cms-view .radio-station .box .title {
+        width: 100%;
+    }
+
+    .cms-view .radio-station .box .description {
+        padding-left: 15px;
+        padding-right: 15px;
+        height: auto;
+    }
+
+    .cms-view .radio-station .box:first-child {
+        background-image: none;
+    }
+
+    .cms-view .radio-station .box:last-child {
+        padding-left: 15px;
+    }
+
+    .cms-view .radio-station .box .line-radio {
+        max-width: 342px;
+        background-position: -82px 485px;
+    }
+
+    .yt_movies_list .row .img-container {
+        width: 104.1%;
+    }
+
+    .row.yt_movies_list {
+        margin-left: 0px;
+        margin-right: 0px;
+    }
+
+    .yt_movies_list .row img {
+        background-image: none !important;
+    }
+
+    .yt_movies_list .row .bottom-line {
+        background-position: -246px 99px;
+    }
+
+    .yt-movies-sidebar {
+        margin-top: 12px;
+    }
+
+    .yt_movies_list iframe {
+        height: auto;
+    }
+
+    #post .post-sidebar {
+        margin-top: 12px;
+    }
+
+    #post .container-post .post_list .post-row {
+        padding-left: 15px;
+    }
+
+    .jq-load-more {
+        width: 92% !important;
+    }
+
+    .icons_mittendrin.section-only-line {
+        background-position: -403px -598px;
+    }
+
+    .container-post .post-row .box {
+        position: relative;
+        max-width: 400px;
+        margin: 0 auto;
+    }
+
+    .container-post .post-row .catalog-title {
+        left: 0px;
+        right: 0px;
+    }
+
+    .container-post .post-row {
+        padding-left: 0px;
+        padding-right: 0px;
+    }
+
+    .yt_movies_list .row .box {
+        max-width: 309px;
+        height: 168px;
+    }
+
+    .tv-box {
+        max-width: 341px;
+        margin: 0 auto;
+    }
+
+    .yt_movies_list iframe {
+        height: 340px;
+    }
+}
+
+@media screen and (max-width: 991px) {
+    .yt_movies_list .row .bottom-line {
+        background-position: -135px 99px;
+    }
+}
+
+@media screen and (max-width: 871px) {
+    .yt_movies_list .row .bottom-line {
+        background-position: -240px 99px;
+    }
+}
+
+@media screen and (max-width: 659px) {
+    .post-sidebar {
+        width: 100%;
+    }
+
+    .container-post {
+        width: 100%;
+    }
+
+    .container-post .post-row .box {
+        position: relative;
+        max-width: 400px;
+        width: 100%;
+    }
+
+    .container-post .post-row {
+        padding-right: 15px;
+    }
+
+    .yt_movies_list .row .bottom-line {
+        background-image: none;
+    }
+
+}
+
+@media screen and (max-width: 346px) {
+    .navbar-default {
+        height: 187px;
+    }
+}

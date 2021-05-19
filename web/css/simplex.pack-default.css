@@ -1,0 +1,23 @@
+/*!
+ * Simplex Admin Template - Version 1.0
+ *
+ * Copyright 2011, Prosoftware.pl Dominik Cwiklik
+ * @see http://www.prosoftware.pl/simplex-admin-template/
+ * @license MIT http://www.opensource.org/licenses/mit-license.php
+ *
+ * Includes jQuery | http://jquery.com/ | Copyright 2011, John Resig | Dual licensed under the MIT or GPL Version 2 licenses.
+ * Includes Uni-form | http://sprawsm.com/uni-form/ | Copyright (c) 2010, Dragan Babic | Released under the MIT License.
+ * Includes Facebox | http://defunkt.io/facebox/ | Copyright (c) 2007/2008 Chris Wanstrath  | Released under the MIT License.
+ *
+ * Date: Fri Mar 25 00:29:24 2011
+ */
+
+@import "simplex.default.css";
+@import "simplex.color-default.css";
+
+@import "jquery/jquery.tipsy.css";
+@import "jquery/jquery-ui.css";
+@import "jquery/jquery.fancybox-1.3.4.css";
+@import "uni-form/uni-form.css";
+@import "uni-form/default.uni-form.css";
+@import "facebox/facebox.css";

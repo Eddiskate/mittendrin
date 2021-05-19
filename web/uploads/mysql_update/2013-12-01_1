@@ -1,0 +1,27 @@
+SET @OLD_UNIQUE_CHECKS=@@UNIQUE_CHECKS, UNIQUE_CHECKS=0;
+SET @OLD_FOREIGN_KEY_CHECKS=@@FOREIGN_KEY_CHECKS, FOREIGN_KEY_CHECKS=0;
+SET @OLD_SQL_MODE=@@SQL_MODE, SQL_MODE='TRADITIONAL';
+
+ALTER TABLE `bpcms_page`.`post` ADD COLUMN `post_catalog_idpost_catalog` INT(11) NOT NULL  AFTER `avatar` , 
+  ADD CONSTRAINT `fk_post_post_catalog1`
+  FOREIGN KEY (`post_catalog_idpost_catalog` )
+  REFERENCES `bpcms_page`.`post_catalog` (`idpost_catalog` )
+  ON DELETE NO ACTION
+  ON UPDATE NO ACTION
+, ADD INDEX `fk_post_post_catalog1` (`post_catalog_idpost_catalog` ASC) ;
+
+ALTER TABLE `bpcms_page`.`slideshow` DROP COLUMN `body_p` , DROP COLUMN `body_h1` , ADD COLUMN `body_h1` VARCHAR(255) NULL DEFAULT NULL  AFTER `file_name` , ADD COLUMN `body_p` VARCHAR(255) NULL DEFAULT NULL  AFTER `body_h1` ;
+
+CREATE  TABLE IF NOT EXISTS `bpcms_page`.`post_catalog` (
+  `idpost_catalog` INT(11) NOT NULL AUTO_INCREMENT ,
+  `name` VARCHAR(255) NULL DEFAULT NULL ,
+  `publication` INT(11) NULL DEFAULT NULL ,
+  PRIMARY KEY (`idpost_catalog`) )
+ENGINE = InnoDB
+DEFAULT CHARACTER SET = utf8
+COLLATE = utf8_general_ci;
+
+
+SET SQL_MODE=@OLD_SQL_MODE;
+SET FOREIGN_KEY_CHECKS=@OLD_FOREIGN_KEY_CHECKS;
+SET UNIQUE_CHECKS=@OLD_UNIQUE_CHECKS;

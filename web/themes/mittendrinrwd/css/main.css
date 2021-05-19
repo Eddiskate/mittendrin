@@ -1,0 +1,1220 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : 2015-10-28, 17:59:30
+    Author     : eddi
+*/
+
+body {
+    font-family: 'Lato', sans-serif;
+    font-size: 16px;
+}
+
+body a:hover {
+    color: #6090c7;
+    font-weight: bold;
+}
+
+/* global */
+
+.position-relative {
+    position: relative;
+}
+
+/* end global */
+
+.navbar-default {
+    background-color: #FFFFFF;
+    background-image: url(/themes/mittendrinrwd2/images/navbar_background.jpg) !important;
+    height: 141px;
+    margin-bottom: 0px;
+    background-repeat: repeat-x;
+    border-bottom: 4px solid #b0b0b0;
+}
+
+.navbar {
+
+}
+
+.navbar-default .logo-description {
+    position: absolute;
+    top: 63px;
+    left: 163px;
+    font-size: 15px;
+    font-weight: 900;
+    color: #547fb2;
+}
+
+.navbar .navbar-toggle {
+    position: absolute;
+    top: -4px;
+    right: -11px;
+    z-index: 9999;
+}
+
+.navbar-social {
+    position: absolute;
+    top: 8px;
+    right: 211px;
+}
+
+.navbar .social_icons {
+
+}
+
+.navbar .social_icons li {
+    display: inline-block;
+}
+
+.navbar .social_icons_bg {
+    background-image: url(/themes/mittendrinrwd2/images/social_icons.png);
+}
+
+.navbar .social_icons_bg:hover {
+    background-image: url(/themes/mittendrinrwd2/images/social_icons_over.png);
+}
+
+.navbar .social-fb {
+    width: 25px;
+    height: 25px;
+    display: block;
+}
+
+.navbar .social-tw {
+    width: 25px;
+    height: 25px;
+    display: block;
+    background-position: -30px;
+}
+
+.navbar .social-gplus {
+    width: 25px;
+    height: 25px;
+    display: block;
+    background-position: -60px;
+}
+
+.navbar .social-vimeo {
+    width: 25px;
+    height: 25px;
+    display: block;
+    background-position: -90px;
+}
+
+.navbar .social-green {
+    width: 25px;
+    height: 25px;
+    display: block;
+    background-position: -120px;
+}
+
+.navbar .social-youtube {
+    width: 25px;
+    height: 25px;
+    display: block;
+    background-position: -380px;
+}
+
+.nav-cms {
+    margin-top: 83px;
+    float: right;
+    margin-right: -13px;
+}
+
+.nav-cms li .active {
+    color: #547fb2 !important;
+}
+
+.nav-cms li a {
+    font-weight: bold;
+    font-size: 14px;
+    color: #333334 !important;
+}
+
+.nav-cms li a:hover {
+    color: #6090c7 !important;
+}
+
+/* navbar for lang menu */
+
+.navbar-lang {
+    position: absolute;
+    top: 8px;
+    right: 10px;
+}
+
+.navbar .lang_icons li {
+    display: inline-block;
+}
+
+.navbar-lang .lang_icons_bg {
+    background-image: url(/themes/mittendrinrwd2/images/lang_icons.png);
+}
+
+.navbar-lang .lang_icons_bg:hover {
+    background-image: url(/themes/mittendrinrwd2/images/lang_icons_over.png);
+}
+
+.navbar-lang .lang-pl {
+    width: 26px;
+    height: 26px;
+    display: block;
+}
+
+.navbar-lang .lang-pl {
+    background-position: 0px 0px;
+}
+
+.navbar-lang .lang-pl.active {
+    background-position: 0px 0px;
+    background-image: url(/themes/mittendrinrwd2/images/lang_icons_over.png);
+}
+
+.navbar-lang .lang-de {
+    width: 26px;
+    height: 26px;
+    display: block;
+    background-position: -31px 0px;
+}
+
+.navbar-lang .lang-de.active {
+    background-position: -31px 0px;
+    background-image: url(/themes/mittendrinrwd2/images/lang_icons_over.png);
+}
+
+/* navbar for lang menu - the end */
+
+/* navbar scoll option */
+
+.navbar img {
+    width: 138px;
+}
+
+.nav_bar_scroll .navbar-brand img {
+    height: 38px;
+    position: absolute;
+    top: 2px;
+    left: 0px;
+    display: none;
+}
+
+.nav_bar_scroll .nav-cms {
+    position: absolute;
+    top: -3px;
+    right: 0px;
+}
+
+.nav_bar_scroll .nav-cms a {
+    color: white !important;
+}
+
+.nav_bar_scroll .nav-cms a:hover {
+    color: #6090c7 !important;
+}
+
+.nav_bar_scroll {
+    height: 50px !important;
+}
+
+/* navbar scoll option end */
+
+/* slideshow */
+
+.container-slideshow {
+    width: 100% !important;
+    border-bottom: 4px solid #b0b0b0;
+    position: relative;
+}
+
+.container-slideshow .container {
+    width: 100%;
+    height: auto;
+}
+
+.container-slideshow .slideshow-btn-left {
+    background-image: url(/themes/mittendrinrwd2/images/left.png) !important;
+    width: 40px;
+    height: 40px;
+    top: 45%;
+    bottom: 50%;
+    margin-left: -100px;
+}
+
+.container-slideshow .slideshow-btn-right {
+    background-image: url(/themes/mittendrinrwd2/images/right.png) !important;
+    width: 40px;
+    height: 40px;
+    top: 45%;
+    bottom: 50%;
+    margin-left: 100px;
+}
+
+.container-slideshow .item img {
+    display: block;
+    margin: 0 auto;
+}
+
+.carousel-control.right {
+    background-image: none;
+    opacity: 1;
+    background-position: 497px;
+    width: 192px;
+}
+
+.carousel-control.left {
+    background-image: none;
+    opacity: 1;
+    background-position: -307px;
+    width: 192px;
+}
+
+/* radio continer */
+
+.container-radio {
+    width: 100%;
+    background-image: url(/themes/mittendrinrwd2/images/radio_background.png);
+    background-position: center;
+    background-repeat-y: inherit;
+    border-bottom: 4px solid #b0b0b0;
+
+}
+
+.container-radio .radio-online {
+    float: right;
+    width: 100%;
+}
+
+.container-radio .radio-online .line {
+    border-bottom: 1px solid black;
+    margin-right: 6px;
+}
+
+.container-radio .radio-online-btn {
+    width: 100%;
+    padding-left: 0px;
+    margin-top: 3px;
+    margin-bottom: 6px;
+}
+
+.container-radio .radio-online-btn .btn_mit {
+    color: white;
+    background-color: #547fb2;
+}
+
+.container-radio .radio-online-btn .btn_hei:hover {
+    color: white;
+    background-color: #547fb2;
+}
+
+.container-radio .radio-online-btn .btn_hei {
+    background-color: #ededed;
+}
+
+.container-radio .radio-online-btn li {
+    display: inline-block;
+    width: 48%;
+    text-align: center;
+    font-size: 12px;
+    padding: 2px;
+    box-shadow: 1px 1px 1px #888888;
+}
+
+.container-radio .radio-online p {
+    margin-bottom: 0px;
+    font-size: 12px;
+}
+
+.container-homeinfo {
+    font-weight: bold;
+    font-size: 13px;
+}
+
+.container-homeinfo span {
+    color: #547fb2;
+}
+
+.container-hader {
+    background-image: url(/themes/mittendrinrwd2/images/content_name_bar.png);
+    background-position: top center;
+    height: 50px;
+    background-repeat: no-repeat;
+    text-align: center;
+    margin-bottom: 20px;
+    width: 100%;
+}
+
+.container-hader h2 {
+    font-size: 18px;
+    padding: 10px;
+}
+
+.container-partners {
+    margin: 0 auto;
+    text-align: center;
+}
+
+.container-partners .logo li {
+    display: inline-block;
+    padding-right: 40px;
+}
+
+.container-partners .logo li a img {
+
+}
+
+footer {
+    background-color: #333335;
+    margin-top: 50px;
+    color: white;
+    text-align: center;
+    border-top: 4px solid #d9d9d9;
+}
+
+footer .container-bottom-cms {
+    display: block;
+}
+
+footer .container-bottom-cms .contact-info-box h3 a {
+    font-size: 15px;
+    margin-bottom: 20px;
+
+}
+
+footer .container-bottom-cms h3 a {
+    color: white !important;
+    font-size: 14px;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+footer .container-bottom-cms h3 a:hover {
+    color: #5078bb !important;
+}
+
+footer .container-bottom-cms ul {
+    padding-left: 21px;
+}
+
+footer .container-bottom-cms li {
+    list-style: none;
+    text-align: left;
+}
+
+footer .container-bottom-cms li a {
+    color: white;
+    font-size: 12px;
+}
+
+footer .container-bottom-cms li a:hover {
+    color: #5078bb;
+}
+
+.container-post .post-row {
+    position: relative;
+}
+
+.container-post .post-row .image {
+    display: block;
+    background-size: cover;
+    width: 100%;
+    height: 230px;
+    background-position: center;
+    margin-bottom: 1px;
+    position: relative;
+}
+
+.container-post .post-row .catalog-title {
+    position: absolute;
+    top: 0px;
+    left: 15px;
+    right: 15px;
+    padding-top: 2px;
+    background-color: #ededed;
+    opacity: 0.8;
+    filter: alpha(opacity=80);
+    width: auto;
+    padding-bottom: 5px;
+    padding-left: 27px;
+}
+
+.container-post .post_list .catalog-title {
+    left: 15px;
+    right: 15px;
+}
+
+.container-post .post-row .catalog-title a {
+    opacity: 1;
+    filter: alpha(opacity=100);
+    color: black !important;
+    font-weight: bold;
+    font-size: 11px;
+}
+
+.container-post .post-row .content {
+    background-color: #ededed;
+    padding: 10px;
+    font-size: 14px;
+    margin-bottom: 1px;
+    height: 173px;
+}
+
+.container-post .post-row .content .description {
+    height: 122px;
+    overflow: hidden;
+}
+
+.container-post .post-row .content .description a {
+    text-decoration: none;
+    font-weight: normal;
+    color: black;
+}
+
+.container-post .post-row .content .title {
+    font-weight: bold;
+    font-size: 15px;
+    display: block;
+    min-height: 38px;
+    line-height: 16px;
+}
+
+.container-post.container-post-homepage .post-row .content {
+
+}
+
+.container-post .post-row .line {
+    border-bottom: 2px solid #d9d9d9;
+    margin-bottom: 24px;
+}
+
+.container-social {
+    min-height: 450px;
+}
+
+.container-social .fb {
+    text-align: right;
+    display: block;
+}
+
+.container-social .tw {
+    text-align: left;
+    display: block;
+}
+
+#post .post-show-page .image {
+    width: 100%;
+    min-height: 231px;
+    position: relative;
+}
+
+#post .post-show-page .image .catalog-title {
+    position: absolute;
+    top: 0px;
+    padding-top: 2px;
+    background-color: #ededed;
+    opacity: 0.8;
+    filter: alpha(opacity=80);
+    width: 100%;
+    padding-bottom: 5px;
+    padding-left: 13px;
+    text-align: right;
+    padding-right: 9px;
+    font-weight: bold;
+    font-size: 12px;
+
+}
+
+#post .post-show-page .content .title {
+    font-weight: 800;
+    font-size: 18px;
+    display: block;
+    margin-bottom: 20px;
+}
+
+#post .post-show-page .full-description {
+    margin-top: 20px;
+}
+
+#post .post-show-page .component-similar-post {
+    margin-top: 20px;
+}
+
+#post .component-similar-post .image {
+    min-height: 160px !important;
+    height: 160px !important;
+}
+
+#post .component-similar-post .content {
+    height: 60px !important;
+}
+
+#post .component-similar-post .post-similar .catalog-title {
+    margin-left: 0px;
+    margin-right: 0px;
+}
+
+/* social icons */
+
+.mittendrin_icons {
+    background-image: url(/themes/mittendrinrwd2/images/contact_icons.png);
+    background-repeat: no-repeat;
+    width: 100%;
+    display: inline-block;
+    padding-left: 27px;
+}
+
+.mittendrin_icons.phone {
+    height: 21px;
+    background-position: 0px 3px;
+}
+
+.mittendrin_icons.mail {
+    height: 21px;
+    background-position: 0px -25px;
+}
+
+.mittendrin_icons.fb {
+    height: 21px;
+    background-position: 0px -50px;
+}
+
+.mittendrin_icons.tw {
+    height: 21px;
+    background-position: 0px -79px;
+}
+
+.mittendrin_icons.yt {
+    height: 21px;
+    background-position: 0px -104px;
+}
+
+footer .contact-info-box li a {
+    font-size: 15px;
+}
+
+.margin-bottom-20 {
+    margin-bottom: 20px;
+}
+
+.btn-no-border {
+    border-radius: 0px;
+}
+
+.btn-no-border:hover {
+    font-weight: normal;
+}
+
+.nav_bar_scroll .nav-cms li a {
+    font-size: 13px !important;
+    font-weight: normal;
+}
+
+.container-main {
+
+}
+
+.container-header {
+    width: 100%;
+    display: block;
+    margin-bottom: 40px;
+}
+
+.container-header .header {
+    background-color: #ededed;
+    padding: 10px;
+    font-size: 14px;
+    font-weight: bold;
+    margin-bottom: 1px;
+    vertical-align: middle;
+    display: block;
+}
+
+.container-header .header {
+    padding: 9px;
+}
+
+.container-header .header .name {
+    line-height: 29px;
+    padding-left: 5px;
+}
+
+.container-header .header-line {
+    border-bottom: 1px solid #d9d9d9;
+}
+
+.icons_mittendrin {
+    background-image: url(/themes/mittendrinrwd2/images/mittendrin_icons.png);
+}
+
+.icons_mittendrin.arrow-right {
+    width: 28px;
+    height: 25px;
+    background-position: -289px -17px;
+    display: block;
+    float: left;
+}
+
+.icons_mittendrin.arrow-top-lg {
+    width: 32px;
+    height: 33px;
+    background-position: -13px -211px;
+    display: block;
+    float: left;
+}
+
+.icons_mittendrin.arrow-bottom-lg {
+    width: 32px;
+    height: 33px;
+    background-position: -13px -247px;
+    display: block;
+    float: left;
+}
+
+.icons_mittendrin.section-only-line {
+    width: 100%;
+    height: 33px;
+    background-position: -223px -598px;
+    display: block;
+    float: left;
+}
+
+#album_month .images {
+    margin-top: 10px;
+    background-position: center;
+    background-size: cover;
+    width: 100%;
+    max-height: 180px;
+}
+
+#album_month h3 {
+    font-weight: bold;
+    font-size: 14px;
+    text-transform: uppercase;
+    color: #5078bb;
+}
+
+#album_month p {
+    font-size: 14px;
+    font-weight: bold;
+}
+
+.container-header-list {
+    padding: 10px;
+    margin-top: 8px;
+}
+
+.container-header-list h1 {
+    font-size: 18px;
+    display: inline-block;
+    margin-top: 5px;
+}
+
+.container-header-list .icons_mittendrin {
+    display: inline-block;
+}
+
+.post_catalog_sidebar {
+    background-image: url(/themes/mittendrinrwd2/images/submenu_top_bar.png);
+    padding-top: 3px;
+    background-position: top right;
+    background-repeat: no-repeat;
+}
+
+.post_catalog_sidebar a {
+    text-decoration: none;
+    color: #333335;
+}
+
+.post_catalog_sidebar li:first-child {
+    margin-top: 1px;
+}
+
+.post_catalog_sidebar li {
+    background-image: url(/themes/mittendrinrwd2/images/submenu_background.png);
+    margin-bottom: 1px;
+    font-weight: bold;
+    line-height: 53px;
+    list-style: none;
+    background-repeat: no-repeat;
+    background-position: top right;
+    font-size: 13px;
+}
+
+.post_catalog_sidebar li:hover {
+    background-image: url(/themes/mittendrinrwd2/images/submenu_background_active.png);
+}
+
+.post_catalog_sidebar li.active {
+    background-image: url(/themes/mittendrinrwd2/images/submenu_background_active.png);
+}
+
+.post_premium {
+
+}
+
+.post_premium a {
+    color: black;
+    text-decoration: none;
+    font-weight: bold;
+    line-height: 16px;
+}
+
+.post_premium .description a {
+    vertical-align: middle;
+    height: 100px;
+    display: table-cell;
+}
+
+.post_premium .section_btn_control {
+    background-image: url(/themes/mittendrinrwd2/images/mittendrin_icons.png);
+    background-repeat: repeat-y;
+    background-position: -27px 376px;
+    min-height: 337px;
+    width: 58px;
+}
+
+.post_premium .section_btn_control #prev_post {
+    cursor: pointer;
+    position: absolute;
+    top: -2px;
+    left: 23px;
+}
+
+.post_premium .section_btn_control #next_post {
+    cursor: pointer;
+    position: absolute;
+    bottom: 0px;
+    left: 23px;
+}
+
+.post_premium .container-header {
+    margin-bottom: 10px;
+}
+
+.post_premium ul {
+    padding-left: 0px;
+}
+
+.post_premium ul li {
+    list-style: none;
+    line-height: 50px;
+    font-size: 12px;
+}
+
+.post_premium .image {
+    padding-left: 0px;
+    padding-right: 0px;
+}
+
+.img-responsive {
+    max-width: 100%;
+    height: auto;
+    display: block;
+}
+
+#post_premium_sidebar .description {
+    line-height: 20px;
+}
+
+#post_premium_sidebar .description p {
+    margin-bottom: 0px;
+}
+
+#post_premium_sidebar .row_line {
+    background-image: url('/themes/mittendrinrwd2/images/mittendrin_icons.png');
+    background-repeat: repeat-y;
+    background-position: -91px 484px;
+    height: 21px;
+    width: 100%;
+}
+
+.caroufredsel_wrapper {
+    height: 336px !important;
+}
+
+.container-post .post-similar .content .title {
+    font-size: 14px !important;
+    margin-bottom: 0px !important;
+}
+
+.plugin_tw {
+    padding: 20px;
+    background-color: #ededed;
+    width: 302px;
+    height: 396px;
+}
+
+.line {
+    margin-top: 1px;
+    border-bottom: 2px solid #d9d9d9;
+}
+
+.social-boks {
+    width: 300px;
+    background-color: #ededed;
+    display: block;
+    padding: 20px;
+    height: 390px;
+}
+
+.post-homepage-header-title {
+    text-align: right;
+    display: block;
+    margin-top: 24px;
+}
+
+.padding-lr-none {
+    padding-left: 0px;
+    padding-right: 0px;
+}
+
+.space-50 {
+    height: 50px;
+}
+
+.menu-top-fixed {
+    position: fixed;
+    top: 0px;
+    width: 100%;
+    height: 50px;
+    background-color: #333;
+    display: none;
+    z-index: 9999;
+}
+
+.menu-top-fixed .nav-cms {
+    margin-top: 0px;
+    float: right;
+    margin-right: 20px;
+    z-index: 99999;
+}
+
+.menu-top-fixed .nav-cms li a {
+    color: #fff !important;
+}
+
+.menu-top-fixed .nav-cms li a:hover {
+    background-color: transparent;
+    color: #5078bb !important;
+}
+
+.menu-top-fixed .nav-cms .dropdown-menu li a {
+    color: #333334 !important;
+}
+
+.menu-top-fixed .nav-cms .dropdown-menu li a:hover {
+    color: #337ab7 !important;
+}
+
+.stimme-form-alert {
+    display: none;
+}
+
+#stimme-form .error {
+    color: red;
+}
+
+.btn-radio-play {
+    cursor: pointer;
+}
+
+.btn-mittendrin-gray {
+    background-color: #e6e6e6;
+    border-color: #e6e6e6;
+    border-width: 2px;
+}
+
+.btn-mittendrin-gray:hover {
+    border-color: #333335;
+}
+
+.cms-view {
+    margin: 30px;
+    position: relative;
+}
+
+
+.yt_movies_list {
+    margin-left: 3px;
+}
+
+.yt_movies_list h1 {
+    font-weight: bold;
+    font-size: 15px;
+    display: block;
+    height: 38px;
+    line-height: 16px;
+    margin-top: 11px;
+}
+
+.yt_movies_list .row h2 {
+    font-weight: bold;
+    font-size: 15px;
+    display: block;
+    height: 38px;
+    line-height: 16px;
+    margin-top: 11px;
+}
+
+.yt_movies_list .row {
+    padding-bottom: 20px;
+}
+
+.yt_movies_list .row .img-container {
+    width: 103%;
+}
+
+.yt_movies_list .row img {
+    background-image: url('/themes/mittendrinrwd2/images/mittendrin_icons.png');
+    width: 103%;
+    height: 168px;
+    display: block;
+    background-position: 478px 458px;
+}
+
+.yt_movies_list .row img:hover {
+    background-position: 478px 283px;
+}
+
+.yt_movies_list .row .bottom-line {
+    background-image: url('/themes/mittendrinrwd2/images/mittendrin_icons.png');
+    width: 100%;
+    height: 20px;
+    display: block;
+    background-position: -190px 99px;
+}
+
+.yt-movies-sidebar {
+    margin-top: 62px;
+}
+
+.yt_movies_list iframe {
+    height: 344px;
+}
+
+#post .post-sidebar {
+    margin-top: 62px;
+}
+
+.cookie-info {
+    padding: 10px;
+    background-color: #fff;
+    color: #000;
+    position: fixed;
+    bottom: 0px;
+    font-size: 14px;
+    width: 96%;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.cookie-info .btn-accept {
+    text-align: center;
+    background-color: #337ab7;
+    color: #ffffff;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    border-radius: 5px;
+    width: 100%;
+    display: block;
+    cursor: pointer;
+}
+
+.cookie-info p {
+    margin-top: 9px;
+    display: inline-block;
+}
+
+.cookie-info .pc-button {
+    display: inline-block;
+    cursor: pointer;
+    line-height: 30px;
+    padding: 0 15px;
+    margin: 0 5px;
+}
+
+.bpcms-cookie-bar {
+    background-color: #fff;
+    width: 100%;
+    margin: 0 auto;
+    position: fixed;
+    bottom: 0px;
+}
+
+.bpcms-cookie-bar .content {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 10px;
+}
+
+.privacy-policy {
+    color: #fff;
+    text-transform: uppercase;
+    display: block;
+    margin-bottom: 80px;
+    font-size: 12px;
+}
+
+.bpcms-cookie-bar .content .btn-mittendrin-gray,
+.bpcms-cookie-bar .content .btn-mittendrin-gray p {
+    display: inline-block;
+    padding: 0px;
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+.schedule-day-name {
+    margin-bottom: 10px;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+
+.mp3_title {
+    position: absolute;
+}
+
+#content_html .search-box {
+    height: 15px;
+    display: block;
+}
+
+.course_lessons_section ul {
+    padding-left: 0px;
+}
+
+.course_lessons_section ul li {
+    list-style: none;
+}
+
+.container-gallery .image {
+    margin: 0 auto;
+}
+
+.container-gallery-thumbs {
+    margin: 0 auto;
+}
+
+.container-gallery-info h1 {
+    font-weight: 800;
+    font-size: 18px;
+    display: block;
+    margin-bottom: 20px;
+    margin-top: 33px;
+    color: #333334;
+}
+
+.container-gallery-info ul li {
+    display: inline-block;
+}
+
+.container-gallery-info a.previus-page {
+    color: white;
+    background-color: #547fb2;
+    padding: 6px;
+    font-size: 12px;
+    display: block;
+    text-align: center;
+    margin-top: 25px;
+    width: 127px;
+    font-weight: bold;
+    margin-right: 11px;
+    height: 29px;
+}
+
+.container-gallery {
+    margin-bottom: 25px;
+}
+
+.container-gallery-thumbs a {
+    width: 110px;
+    height: 75px;
+    float: left;
+    margin-bottom: 5px;
+    margin-right: 5px;
+}
+
+.container-gallery-thumbs a.active {
+    border: 3px solid #547fb2;
+}
+
+.container-gallery-thumbs a img {
+    max-width: 100%;
+
+}
+
+.gallery-info {
+    color: white;
+    background-color: #547fb2;
+    padding: 2px;
+    font-size: 18px;
+    display: block;
+    text-align: center;
+    margin-top: 30px;
+    width: 70px;
+    font-weight: bold;
+}
+
+
+
+.container-gallery .gallery-nav {
+
+}
+
+.container-gallery .nav-right {
+    background-image: url(/themes/mittendrinrwd2/images/right.png) !important;
+    width: 40px;
+    height: 40px;
+    display: block;
+    float: right;
+    position: fixed;
+    top: 50%;
+    margin-left: 29px;
+}
+
+.container-gallery .nav-left {
+    background-image: url(/themes/mittendrinrwd2/images/left.png) !important;
+    width: 40px;
+    height: 40px;
+    display: block;
+    position: fixed;
+    top: 50%;
+}
+
+.outer {
+    height: 100vh;
+}
+
+.container-main hr {
+    margin-top: 0px;
+    margin-bottom: 25px;
+}
+
+.gallery-nav-mobile {
+    height: 60px;
+}
+
+.gallery-nav-btn-left {
+    background-image: url(/themes/mittendrinrwd2/images/left.png) !important;
+    width: 40px;
+    height: 40px;
+    display: block;
+    float: right;
+}
+
+.gallery-nav-btn-right {
+    background-image: url(/themes/mittendrinrwd2/images/right.png) !important;
+    width: 40px;
+    height: 40px;
+    display: block;
+}
+
+.gallery-mobile {
+    display: none;
+}
+
+.stime-privacy-policy ul li {
+    list-style: none;
+    font-size: 12px;
+}

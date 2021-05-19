@@ -1,0 +1,637 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>Native HTML5 Radio Player - html5 and jquery website internet radio player</title>
+<link href="css/documentation.css" rel="stylesheet" type="text/css">
+<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+</head>
+<body>
+<div class="header-bg2"></div>
+<div class="header-bg"></div>
+
+<div class="panel-wpr">
+	<div class="panel">
+		<div class="logo-wpr">
+			<a href="http://native.flashradio.info" target="_blank" class="logo"></a>
+		</div>
+		<div class="buttons-wpr">
+			<div class="btn-r"><a href="#examples">Examples</a></div>
+			<div class="btn-r btn-buy"><a href="https://www.flashradio.info/shortcode/" target="_blank">Shortcode Generator</a></div>
+			<div class="btn-r btn-buy"><a href="https://codecanyon.net/item/native-flash-radio/9672527" target="_blank">Buy Now</a></div>
+		</div>
+	</div>	
+		
+</div>
+<div class="banner-wpr">
+	<div class="banner">
+		<div class="box">
+			<span class="title">NATIVE HTML5 RADIO PLAYER V4</span>
+			<p>
+				Built in HTML5/jQuery/CSS (and a little bit PHP for older streaming server). <br> Animated with sound-analyzer and Mobile Ready!
+			</p>
+		</div>
+	</div>
+</div>
+<div class="main-wpr">
+	<div class="main">
+		<h1>Basic Settings Shoutcast 1 Server</h1>
+		<table>
+			<tr>
+				<th>Setting</th>
+				<th>Description</th>
+				<th>Value</th>
+			</tr>
+			<tr>
+				<td>streamurl:</td>
+				<td>URL to your radio stream</td>
+				<td>http://server:port</td>
+			</tr>
+			<tr>
+				<td>streamtype:</td>
+				<td>Type of Shoutcast (1/2), Icecast2, radionomy or other</td>
+				<td>shoutcast1</td>
+			</tr>
+		</table>
+
+		<h1>Basic Settings Shoutcast 2 Server</h1>
+		<table>
+			<tr>
+				<th>Setting</th>
+				<th>Description</th>
+				<th>Value</th>
+			</tr>
+			<tr>
+				<td>streamurl:</td>
+				<td>URL to your radio stream</td>
+				<td>http://server:port</td>
+			</tr>
+			<tr>
+				<td>streamtype:</td>
+				<td>Type of Shoutcast (1/2), Icecast2, radionomy or other</td>
+				<td>shoutcast2</td>
+			</tr>
+			<tr>
+				<td>streampath:</td>
+				<td>The stream path to your Server</td>
+				<td>/mystreampath</td>
+			</tr>
+			<tr>
+				<td>streamid:</td>
+				<td>The stream id from your Server</td>
+				<td>1,2,3,4,...</td>
+			</tr>
+		</table>
+
+		<h1>Basic Settings Icecast 2 Server</h1>
+		<table>
+			<tr>
+				<th>Setting</th>
+				<th>Description</th>
+				<th>Value</th>
+			</tr>
+			<tr>
+				<td>streamurl:</td>
+				<td>URL to your radio stream</td>
+				<td>http://server:port</td>
+			</tr>
+			<tr>
+				<td>streamtype:</td>
+				<td>Type of Shoutcast (1/2), Icecast2, radionomy or other</td>
+				<td>icecast2</td>
+			</tr>
+			<tr>
+				<td>mountpoint:</td>
+				<td>The stream path to your Server</td>
+				<td>/mymountpoint</td>
+			</tr>
+		</table>
+
+		<h1>Basic Settings Radionomy Server</h1>
+		<table>
+			<tr>
+				<th>Setting</th>
+				<th>Description</th>
+				<th>Value</th>
+			</tr>
+			<tr>
+				<td>streamurl:</td>
+				<td>URL and path to your radio stream</td>
+				<td>http://server:port/path</td>
+			</tr>
+			<tr>
+				<td>streamtype:</td>
+				<td>Type of Shoutcast (1/2), Icecast2, radionomy or other</td>
+				<td>radionomy</td>
+			</tr>
+			<tr>
+				<td>radiouid:</td>
+				<td>your radio UID (Guid available under the settings tab of the RMO -> Technical Information</td>
+				<td>8f255562-3f11-406b-8d98-f98cb23c84ec</td>
+			</tr>
+			<tr>
+				<td>apikey:</td>
+				<td>your personal API key is available under the settings tab of the RMO -> Technical Information</td>
+				<td>4842dc4c-d6e0-4ab3-986b-412fd7d6aeab</td>
+			</tr>
+		</table>
+
+		<h1>Basic Settings Other Servers</h1>
+		<table>
+			<tr>
+				<th>Setting</th>
+				<th>Description</th>
+				<th>Value</th>
+			</tr>
+			<tr>
+				<td>streamurl:</td>
+				<td>URL to your radio stream</td>
+				<td>http://server:port</td>
+			</tr>
+			<tr>
+				<td>streamtype:</td>
+				<td>Type of Shoutcast (1/2), Icecast2, radionomy or other</td>
+				<td>other</td>
+			</tr>
+			<tr>
+				<td>streamprefix:</td>
+				<td>This is a special option for non icecast, non shoutcast and non radionomy servers. Default is: "/;type=mp3". Other value you can use is "#".</td>
+				<td>"/;type=mp3" OR "#"</td>
+			</tr>
+		</table>
+	
+		<h1>Design Settings</h1>
+		<table>
+			<tr>
+				<th>Setting</th>
+				<th>Description</th>
+				<th>Value</th>
+			</tr>
+			<tr>
+				<td>userinterface:</td>
+				<td>User Interface version. Small for small height up to 100px , Big for bigger height from 600px</td>
+				<td>small, big</td>
+			</tr>
+			<tr>
+				<td>themecolor:</td>
+				<td>set the RGB value for your background</td>
+				<td>#000000 - #ffffff</td>
+			</tr>
+			<tr>
+				<td>themecolor:</td>
+				<td>set the RGB value from your native flash radio player theme</td>
+				<td>#000000 - #ffffff</td>
+			</tr>
+			<tr>
+				<td>themefontcolor:</td>
+				<td>set the RGB value from your font</td>
+				<td>#000000 - #ffffff</td>
+			</tr>
+			<tr>
+				<td>titlefontname:</td>
+				<td>is the font family name</td>
+				<td>p.e. Oswald</td>
+			</tr>
+			<tr>
+				<td>titlegooglefontname:</td>
+				<td>The google font name for loading. Please check this out on <u><a href="https://www.google.com/fonts" target="_blank">Google Fonts</a></u>.</td>
+				<td>p.e. Oswald:400:latin,latin-ext </td>
+			</tr>
+			<tr>
+				<td>songfontname:</td>
+				<td>is the font family name</td>
+				<td>p.e. Oswald</td>
+			</tr>
+			<tr>
+				<td>songgooglefontname:</td>
+				<td>The google font name for loading. Please check this out on <u><a href="https://www.google.com/fonts" target="_blank">Google Fonts</a></u>.</td>
+				<td>p.e. Oswald:400:latin,latin-ext </td>
+			</tr>
+		</table>
+		
+		<h1>Optional Settings</h1>
+		<table>
+			<tr>
+				<th>Setting</th>
+				<th>Description</th>
+				<th>Value</th>
+			</tr>
+			<tr>
+				<td>radioname:</td>
+				<td>Name from your radio</td>
+				<td>My Radio</td>
+			</tr>
+			<tr>
+				<td>radiocover:</td>
+				<td>Cover Image with your logo</td>
+				<td>http://www.mylink.to/myradiocover.jpg</td>
+			</tr>
+			<tr>
+				<td>ownsongtitleurl:</td>
+				<td>if you have a own URL for your Songtitle</td>
+				<td>http://www.mylink.to/myownsongtitle.txt</td>
+			</tr>
+			<tr>
+				<td>autoplay:</td>
+				<td>you can enabled the autoplay from your player (just desktop)</td>
+				<td>true, false</td>
+			</tr>
+			<tr>
+				<td>scroll:</td>
+				<td>you can enabled display scroll(Radioname, Songtitle)</td>
+				<td>true, false, auto</td>
+			</tr>
+			<tr>
+				<td>useanalyzer:</td>
+				<td>use the animation from a sound-analyzer (real will just work on CORS server)</td>
+				<td>nothing, fake, real</td>
+			</tr>
+			<tr>
+				<td>analyzertype:</td>
+				<td>type of animation from a sound-analyzer</td>
+				<td>1,2,3,4,5,6</td>
+			</tr>
+			<tr>
+				<td>usecover:</td>
+				<td>If you want use cover feature.</td>
+				<td>true, false</td>
+			</tr>
+			<tr>
+				<td>affiliatetoken:</td>
+				<td>If you want use cover feature with <u><a href="https://itunes.phgconsole.performancehorizon.com/login/itunes/en_us" target="_blank">iTunes Affiliate Program</a></u>. </td>
+				<td>mytoken</td>
+			</tr>
+			<tr>
+				<td>songinformationinterval:</td>
+				<td>here you can set the interval for reading song information (in ms)</td>
+				<td>0 - 20000</td>
+			</tr>
+			<tr>
+				<td>startvolume:</td>
+				<td>set the start volume (just for the first visit, the volume controler saved the volume value local)</td>
+				<td>0-100</td>
+			</tr>
+			<tr>
+				<td>streamprefix:</td>
+				<td>This is a special option for non icecast, non shoutcast and non radionomy servers. Default is: "/;type=mp3". Other value you can use is "#".</td>
+				<td>/;type=mp3</td>
+			</tr>
+			<tr>
+				<td>corsproxy:</td>
+				<td>This <u><a href="https://en.wikipedia.org/wiki/Cross-origin_resource_sharing" target="_blank">CORS</a></u> Server is required for SSL. </td>
+				<td>https://corsproxy.our.buildo.io/ or none or php as fallback</td>
+			</tr>
+			<tr>
+				<td>usestreamcorsproxy:</td>
+				<td>Use the <u><a href="https://en.wikipedia.org/wiki/Cross-origin_resource_sharing" target="_blank">CORS PROXY</a></u> for your stream URL. </td>
+				<td>true, false</td>
+			</tr>
+			<tr>
+				<td>debug:</td>
+				<td>is very optional, just for developers</td>
+				<td>true, false</td>
+			</tr>
+		</table>
+
+		<h1 id="corsproxy">SSL CORS PROXY LIST</h1>
+		<table>
+			<tr>
+					<th>
+							https://html5radioplayer.herokuapp.com/?q=
+						</th>
+			</tr>
+				
+			<tr>
+				<th>https://galvanize-cors-proxy.herokuapp.com/</th>
+			</tr>
+			<tr>
+				<th>https://cors-anywhere.herokuapp.com/</th>
+			</tr>
+			<tr>
+				<th>https://thingproxy.freeboard.io/fetch/</th>
+			</tr>
+			<tr>
+				<th>https://corsproxy.our.buildo.io/</th>
+			</tr>
+			<tr>
+				<th>https://cors.now.sh/</th>
+			</tr>
+		</table>
+
+		<h1>Installation</h1>
+		<div class="usage">
+			<p>First register your domain on <u><a href="https://www.flashradio.info/register" target="_blank">https://www.flashradio.info/register</a></u>
+
+			<p>Then copy all files (nativeflashradiov4.js, currentsong.php, radioname.php) from js-folder in your online js-folder.</p>
+			
+			<p>Make sure jQuery is include, if not, include it</p>
+			<div class="code">&lt;script src="https://code.jquery.com/jquery-3.2.1.min.js"&gt;&lt;/script&gt;</div>
+			
+			<p>Then include nativeflashradio files</p>
+			<div class="code">&lt;script src="js/nativeflashradiov4.js"&gt;&lt;/script&gt;</div>
+			
+			<p>Add a parent div to the body of your html page, with a unique id. Use diffrent unique id's for multiple radio players on the same site.</p>
+			<div class="code">
+				<pre>&lt;div id="nativeflashradio" style="width:100%; height:60px;"&gt;&lt;/div&gt;</pre>
+			</div>
+			
+			<p>Finally call the script in the body of your html page and use your unique ID. </p>
+			<div class="code">
+			<pre>&lt;script&gt;
+    $("#nativeflashradio").flashradio({
+        streamurl: "http://ip:port"
+    });
+&lt;/script&gt;</pre>
+			</div>
+
+			<h1>Shortcode Generator</h1>
+
+
+			<p style="text-align:center;">For very easy configuration you can use the shortcode generator:</p>
+			<div style="width: 100%">
+				<div class="btn-r" style="position: relative; left:50%; width: 180px; margin-left: -90px; text-align: center; padding: 8px 0;"><a href="https://www.flashradio.info/shortcode/" target="_blank">Shortcode Generator</a></div>
+			</div>
+
+			<h1 id="examples">Examples</h1>
+			<div id="shoutcast2" style="width:100%; height:60px;"></div>
+			<div class="code">
+			<pre>//SHOUTCAST2 SERVER
+&lt;div id="nativeflashradio" style="width:100%; height:60px;"&gt;&lt;/div&gt;
+&lt;script&gt;
+$("#nativeflashradio").flashradio({
+	streamurl: "http://149.56.155.209:80", 
+	streampath: "/live",
+	streamid: "1",
+	streamtype: "shoutcast2",
+	titlefontname: "Open Sans Condensed",
+	titlegooglefontname: "Open+Sans+Condensed:300",
+	songfontname: "Oswald",
+	songgooglefontname: "Oswald:400",
+	themecolor: "#6c5b7b", 
+	themefontcolor:"#ffffff", 
+	songinformationinterval:"10000", 
+	radioname: "Smooth Jazz", 
+	scroll: "auto", 
+	autoplay: "false", 
+	startvolume: "100",
+	useanalyzer: "real",
+	analyzertype: "3"
+});
+&lt;/script&gt;</pre>
+			</div>
+			<div id="icecast2" style="width:100%; height:600px;"></div>
+			<div class="code">
+			<pre>//ICECAST2 SERVER
+&lt;div id="nativeflashradio" style="width:100%; height:600px;"&gt;&lt;/div&gt;
+&lt;script&gt;
+$("#nativeflashradio").flashradio({
+	userinterface:"big",
+	backgroundcolor: "#999999",
+	streamurl: "http://79.172.194.189:8060", 
+	mountpoint: "/live.mp3",
+	streamtype: "icecast2",
+	titlefontname:"Roboto", 
+	titlegooglefontname: "Roboto:400",
+	songfontname:"Oswald", 
+	songgooglefontname: "Oswald:400",
+	themecolor: "#355c7d", 
+	themefontcolor:"#f8b195",
+	songinformationinterval:"15000", 
+	scroll: "true", 
+	autoplay: "FALSE", 
+	startvolume: "50",
+	useanalyzer: "real",
+	analyzertype: "1"
+});
+&lt;/script&gt;</pre>
+			</div>			
+
+			<div id="radionomy" style="width:100%; height:60px;"></div>
+			<div class="code">
+			<pre>//RADIONOMY SERVER
+&lt;div id="nativeflashradio" style="width:100%; height:60px;"&gt;&lt;/div&gt;				
+&lt;script&gt;
+$("#nativeflashradio").flashradio({ 
+	titlefontname:"Roboto", 
+	titlegooglefontname:"Roboto:100", 
+	useanalyzer: "real",
+	analyzertype: "2",
+	songfontname:"Oswald", 
+	songgooglefontname:"Oswald:400", 
+	themecolor: "#f8b195", 
+	themefontcolor:"#f67280", 
+	streamurl: "http://listen.radionomy.com/wimpy",
+	streamtype: "radionomy",
+	radiouid: "8f255562-3f11-406b-8d98-f98cb23c84ec",
+	apikey: "4842dc4c-d6e0-4ab3-986b-412fd7d6aeab",
+	songinformationinterval:"20000", 
+	scroll: "AUTO", 
+	autoplay: "false", 
+	debug: "false", 
+	startvolume: "100"
+});
+&lt;/script&gt;</pre>
+			</div>	
+		</div>
+		<h1>Support</h1>
+		<div class="usage">
+
+		<h2>SSL-Server and Song Title Problem</h2>
+		<p>
+			You need a <u><a href="https://en.wikipedia.org/wiki/Cross-origin_resource_sharing" target="_blank">CORS</a></u> Server when you use a SSL-Webserver (https). Look at optional settings: <b>corsproxy</b>. 
+		</p>
+
+
+
+
+
+		<h2>Icecast 2.4 kh4/kh5 do not function on iOS 11</h2>
+		<p>
+		During testing with iOS 11 (currently up to Beta 5) Icecast has not worked on either iPhone or iPad devices. A bug report was submitted to Apple shortly after the release of Beta 1. However, 5 betas on with it still not fixed make it look likely no resolution will be offered on Apple's side at launch in September. Safari Technical Preview (macOS Sierra) and Safari on High Sierra Beta do not seem to be affected. Older versions (2.3.3 KH11) and standard Icecast 2.4.1 do function correctly.
+		</p>
+		<p>
+		Please Update to the latest version: <u><a href="https://karlheyes.github.io/" target="_blank">https://karlheyes.github.io/</a></u>
+		</p>
+
+
+
+
+
+
+		<h2>Problem with Chrome 55 + and Safari 10 +</h2>
+		<p>
+		Issue why SHOUTcast v1 and early SHOUTcastv2 will no longer play in chrome and safari: <u><a href="http://forums.winamp.com/showthread.php?t=398988" target="_blank">http://forums.winamp.com/showthread.php?t=398988</a></u> Solution: Update to the current v2 build and it works!
+		</p>
+		<p>
+		Google Chrome 55 + and Safari 10 + have a issue with much StreamURLs. The Problem is the header HTTP/0.9. In the future this will not more work. Browser console: GET http://mystreamurl.net:1234/; net::ERR_INVALID_HTTP_RESPONSE
+		</p>
+		<p>
+		<u><a href="https://bugs.chromium.org/p/chromium/issues/detail?id=669800" target="_blank">Read More</a></u>
+		</p>
+
+
+
+
+
+
+
+
+		<h2>Which audio streams are supported?</h2>
+		<p>MPEG-Audio stream AAC-Audio stream</p> 
+		<p>All other formats are experimental: AAC+, HE-AAC, HE-AAC v2 and not official supported</p>
+
+
+
+
+
+
+
+		<h2>How can I display the current song playing?</h2>
+		<p>
+		The player used a php-script for display current song. This script required PHP5 and supported cURL. <u><a href="http://php.net/manual/en/book.curl.php" target="_blank">http://php.net/manual/en/book.curl.php</a></u> Check if allow_url_fopen is enabled in your php.ini Also important is the web-server firewall. The web-server need a communication with the streaming URL. If only port 80 allowed, can this script not communicate with the streaming URL.
+		</p>
+
+
+
+
+
+		<h2>Where can i find the shoutcast streampath?</h2>
+		<p>Open your .pls - file und look at the server url. After the latest slash you find the streampath.
+		</p>
+		<pre>
+[playlist]
+NumberOfEntries=1
+File1=http://123.456.789.1234:8100/here_is_my_path
+Title1=FM Best Webradio of the World
+Length1=-1
+Version=2
+		</pre>
+		
+
+
+
+		<h2>Using Stunnel to add ssl to shoutcast</h2>
+		<p>A client requested shoutcast over ssl. Shoutcast did not support ssl naively so I decided to use stunnel to allow it. Here is how I got ssl working:</p>
+		<p>First stunnel must be installed. Many OS’s have stunnel preinstalled: so try running stunnel first. If not install with your OS’s package management tool such as</p>
+		<p>centos: yum install stunnel ubuntu: apt-get install stunnel</p>
+		<p>Once stunnel is installed you can begin. First a config file is needed. In this example shoutcast is installed already and running on port 8000. It is listening on localhost only. Create the file</p>
+		<p>/etc/stunnel/stunnel.conf</p>
+		<pre>
+client=no
+[shoutcast]
+accept=8002
+connect=localhost:8000
+cert = /etc/stunnel/stunnel.pem
+		</pre>
+		<p>Now create the PEM file /etc/stunnel/stunnel.pem</p>
+		<p>The format is sa key first certificate second cabundle/intermediate third</p>
+		<p>Set permissions to 600 chmod 600 /etc/stunnel/stunnel.pem</p>
+		<p>Now stunnel can be started with the command /usr/bin/stunnel and we can connect to port 8002 over ssl.</p>
+		<p>OR USE: <u><a href="http://www.centova.com/doc/cast/installation_manual/08_Configuring_SSL" target="_blank">http://www.centova.com/doc/cast/installation_manual/08_Configuring_SSL</a></u></p>
+
+
+
+
+
+
+
+
+		<hr>
+		<p>
+		Once again, thank you so much for purchasing this plugin. As I said at the beginning, I'd be glad to help you if you have any questions relating to this plugin. No guarantees, but I'll do my best to assist. If you have a more general question relating to the plugin on ThemeForest, you might consider visiting the forums and asking your question in the "Item Discussion" section.
+		</p>
+		<p>
+		Support in English and German guaranteed for all customers!
+		</p>
+
+		</div>
+	</div>
+</div>
+<div class="foot">© 2017 by <a href="https://www.sodah.de" target="_blank">Sodah</a></div>
+<script src="js/nativeflashradiov4.js"></script>
+
+<script>
+	window.onload = function () {
+	    $("#shoutcast2").flashradio({
+	        titlefontname: "Open Sans Condensed",
+	        titlegooglefontname: "Open+Sans+Condensed:300",
+	        songfontname: "Oswald",
+	        songgooglefontname: "Oswald:400",
+	        themecolor: "#6c5b7b", 
+	        themefontcolor:"#ffffff", 
+	        streamurl: "http://149.56.155.209:80", 
+	        streampath: "/live",
+	        streamid: "1",
+	        streamtype: "shoutcast2",
+	        songinformationinterval:"10000", 
+	        radioname: "Smooth Jazz", 
+	        scroll: "auto", 
+	        autoplay: "false", 
+	        startvolume: "100",
+	        useanalyzer: "real",
+	        analyzertype: "3",
+			corsproxy: "https://html5radioplayer.herokuapp.com/?q=",
+			usestreamcorsproxy: "true"
+	    });
+
+	   $("#icecast2").flashradio({
+		userinterface:"big",
+		   backgroundcolor: "#999999",
+        	titlefontname:"Roboto", 
+			titlegooglefontname: "Roboto:400",
+			songfontname:"Oswald", 
+			songgooglefontname: "Oswald:400",
+			themecolor: "#355c7d", 
+			themefontcolor:"#ffffff", 
+			streamurl: "http://79.172.194.189:8060", 
+			mountpoint: "/live.mp3",
+			streamtype: "icecast2",
+			songinformationinterval:"15000", 
+			scroll: "true", 
+			autoplay: "FALSE", 
+			startvolume: "50",
+			useanalyzer: "real",
+			analyzertype: "6",
+			corsproxy: "https://html5radioplayer.herokuapp.com/?q=",
+			usestreamcorsproxy: "false"
+    	});
+
+		$("#radionomy").flashradio({
+			useanalyzer: "real",
+			themecolor: "#f8b195", 
+			themefontcolor:"#f67280", 
+			streamurl: "http://listen.radionomy.com/wimpy",
+			streamtype: "radionomy",
+			radiouid: "8f255562-3f11-406b-8d98-f98cb23c84ec",
+			apikey: "4842dc4c-d6e0-4ab3-986b-412fd7d6aeab",
+			songinformationinterval:"20000", 
+			scroll: "AUTO", 
+			autoplay: "false", 
+			debug: "false", 
+			startvolume: "100",
+			analyzertype: "2",
+			corsproxy: "https://html5radioplayer.herokuapp.com/?q=",
+			usestreamcorsproxy: "true"
+    	});
+	};
+</script>
+
+
+
+<script>
+$(window).scroll(function() {    
+    var scroll = $(window).scrollTop();
+     //console.log(scroll);
+    if (scroll >= 50) {
+        //console.log('a');
+        $(".panel-wpr").addClass("panel-wpr-bg");
+    } else {
+        //console.log('a');
+        $(".panel-wpr").removeClass("panel-wpr-bg");
+    }
+});
+</script>
+</body>
+</html>

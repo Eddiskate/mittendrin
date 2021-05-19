@@ -1,0 +1,37 @@
+/*!
+ * Simplex Admin Template - Version 1.0
+ *
+ * Copyright 2011, Prosoftware.pl Dominik Cwiklik
+ * @see http://www.prosoftware.pl/simplex-admin-template/
+ * @license MIT http://www.opensource.org/licenses/mit-license.php
+ *
+ * Includes jQuery | http://jquery.com/ | Copyright 2011, John Resig | Dual licensed under the MIT or GPL Version 2 licenses.
+ * Includes Uni-form | http://sprawsm.com/uni-form/ | Copyright (c) 2010, Dragan Babic | Released under the MIT License.
+ * Includes Facebox | http://defunkt.io/facebox/ | Copyright (c) 2007/2008 Chris Wanstrath  | Released under the MIT License.
+ *
+ * Date: Fri Mar 25 00:29:24 2011
+ */
+
+body { background: url(/images/admin/top-bg-red.png) repeat-x!important; color: #333; }
+
+a { color: #741313; }
+a:hover { color: #741313; }
+
+#header #logo a { color: #fff; }
+#header-right { color: #fff; background: #612a2a; }
+#header-right a { color: #fff; text-shadow: 0 -2px rgba(0, 0, 0, 0.2); }
+#header-right ul li.first, #header-right ul li.inside { border-right: 1px solid #22272b; }
+#header-right .hotCount a { background: red; color: #fff; }
+
+/* top menu*/
+#top-nav li a { text-shadow: 0px 1px #fff; color: #111; }
+#top-nav li:hover>a { color: #fff; text-shadow: 0px -1px #973b3b; background: url(/images/admin/selected-tab-red.png) repeat-x; }
+#top-nav li a.selected { color: #fff; }
+#top-nav .top-nav-sub li a { color: #ffe3e3 }
+#top-nav .top-nav-sub li a:hover { color: #fff!important; }
+#top-nav .top-nav-sub { background: url(/images/admin/navi-sub-bg-red.png) 0 100% no-repeat; }
+
+h1.title { background: #EAF2F5 url(/images/admin/blue-gradient-red.jpg);  }
+
+.uniForm .buttonHolder .primaryAction { background: #741313!important; border: 1px solid #510d0d!important; }
+.btn { color: #fff; background: #510d0d; }

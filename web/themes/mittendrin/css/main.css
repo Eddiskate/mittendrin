@@ -1,0 +1,878 @@
+/* 
+    Document   : main
+    Created on : 2012-11-17, 11:41:09
+    Author     : eddi
+    Description:
+        Purpose of the stylesheet follows.
+*/
+
+root {
+    display: block;
+}
+
+body {
+    background-image: url(/themes/mittendrin/images/background.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+    background-repeat: repeat-x;
+    margin: 0 !important;
+    padding: 0 !important;
+    font-family: 'Josefin Sans', sans-serif;
+    font-size: 16px;
+}
+
+/* custom bootstrap */
+
+.container {
+    width: 1000px;
+    position: relative;
+}
+
+/* end custom bootstrap */
+
+.page_content {
+
+}
+
+.page_content_bg {
+    background-image: url(/themes/mittendrin/images/content-background.png);
+}
+
+.page_content .social_icons_block {
+    background-color: #4D7ED9;
+    width: 100%;
+    height: 32px;
+    position: relative;
+}
+
+.page_content .social_icons_block .lang_menu {
+    position: absolute;
+    top: 3px;
+    right: 18px;
+    width: 100px;
+    height: 30px;
+}
+
+.page_content .social_icons_block .lang_menu .lang_pl {
+    background-image: url('/themes/mittendrin/images/flagplunactive.png');
+    width: 23px;
+    height: 23px;
+    position: absolute;
+    top: 2px;
+    right: 34px;
+}
+
+.page_content .social_icons_block .lang_menu .lang_pl:hover {
+    background-image: url('/themes/mittendrin/images/flagpl.png');
+    width: 27px;
+    height: 27px;
+    position: absolute;
+    top: 0px;
+    right: 33px;
+}
+
+.page_content .social_icons_block .lang_menu .lang_pl_active {
+    background-image: url('/themes/mittendrin/images/flagpl.png');
+    width: 27px;
+    height: 27px;
+    position: absolute;
+    top: 0px;
+    right: 33px;
+}
+
+.page_content .social_icons_block .lang_menu .lang_de {
+    background-image: url('/themes/mittendrin/images/flagdeunactive.png');
+    width: 23px;
+    height: 23px;
+    position: absolute;
+    top: 2px;
+    right: 1px;
+}
+
+.page_content .social_icons_block .lang_menu .lang_de:hover {
+    background-image: url('/themes/mittendrin/images/flagde.png');
+    width: 27px;
+    height: 27px;
+    position: absolute;
+    top: 0px;
+    right: 1px;
+}
+
+.page_content .social_icons_block .lang_menu .lang_de_active {
+    background-image: url('/themes/mittendrin/images/flagde.png');
+    width: 27px;
+    height: 27px;
+    position: absolute;
+    top: 0px;
+    right: 1px;
+}
+
+.page_content .social_icons_block ul {
+    margin: 0px;
+    margin-left: 13px;
+}
+
+.page_content .social_icons_block ul li {
+    list-style: none;
+    float: left;
+    margin-top: 4px;
+    margin-right: 4px;
+    width: 30px;
+    text-align: center;
+}
+
+.page_content .header_section {
+    text-align: center;
+    margin-top: 7px;
+    margin-bottom: 15px;
+    position: relative;
+}
+
+.page_content .header_section .logo {
+
+}
+
+.page_content .header_section .radio {
+    position: absolute;
+    background-image: url(/themes/mittendrin/images/radio.png);
+    width: 128px;
+    height: 127px;
+    margin-left: 9px;
+    margin-top: -1px;
+}
+
+.page_content .header_section .text_label {
+    background-color: transparent;
+    color: #4D7ED9;
+    line-height: 24px;
+    font-family: 'Josefin Sans', sans-serif;
+    position: absolute;
+    text-align: left;
+    padding-left: 20px;
+    padding-top: 5px;
+    font-weight: 600;
+    font-size: 16px;
+}
+
+.page_content .sf_content {
+    top: 300px;
+    display: block;
+    margin: 20px;
+}
+
+.page_content .footer_section {
+    height: 250px;
+}
+
+.post_list {
+    margin-right: 10px;
+}
+
+.post_list .post {
+
+}
+
+.post_list .post h3, p, img {
+    margin-left: 7px;
+}
+
+.post_list .post .post_catalog {
+    width: 100%;
+    min-height: 20px;
+    background-color: transparent;
+    color: #4D7ED9;
+    font-size: 17px;
+    line-height: 20px;
+    font-family: 'Josefin Sans', sans-serif;
+    font-weight: 400;
+    margin-left: 7px;
+    margin-top: 11px;
+    border-bottom: 1px solid #4D7ED9;
+    margin-bottom: 10px;
+}
+
+.post_list .post .post_catalog a {
+    color: #4D7ED9;
+}
+
+.post_list .post h3 {
+    color: #4D7ED9;
+    font-family: 'Josefin Sans', sans-serif;
+    font-weight: 700;
+    font-size: 15px;
+    line-height: 18px;
+}
+
+.post_list .post h3 a {
+    color: #4D7ED9;
+}
+
+.monit_day {
+    margin-left: 30px;
+    font-family: 'Josefin Sans', sans-serif;
+    font-weight: 600;
+}
+
+.monit_day span {
+    color: #4D7ED9;
+    font-family: 'Josefin Sans', sans-serif;
+    font-weight: 700;
+}
+
+.plugin_fb {
+    margin-right: -40px;
+    margin-left: 14px;
+    margin-top: 30px;
+    background-image: url('/themes/mittendrin/images/facebook_back.png');
+    background-repeat: no-repeat;
+    height: 500px;
+}
+
+#slideshow {
+    background-image: url('/themes/mittendrin/images/slideshow.png');
+    background-repeat: no-repeat;
+    height: 280px;
+    position: relative;
+    left: 9px;
+}
+
+#slideshow .carousel-indicators li {
+    background-image: url('/themes/mittendrin/images/koleczko.png');    
+    z-index: 998;
+    display: block;
+    float: left;
+    width: 21px;
+    height: 21px;
+    margin-left: 2px;
+    text-indent: -999px;
+    border-radius: 5px;
+    margin-top: -6px;
+    background-repeat: no-repeat;
+}
+
+#slideshow .carousel-indicators .active {
+    background-image: url('/themes/mittendrin/images/koleczko.png');
+    background-position: -19px 0px;
+    z-index: 998;
+    display: block;
+    float: left;
+    width: 21px;
+    height: 21px;
+    margin-left: 2px;
+    text-indent: -999px;
+    border-radius: 5px;
+    margin-top: -6px;
+    background-repeat: no-repeat;
+}
+
+#slideshow .item {
+    margin-left: 20px;
+    margin-top: 5px;
+}
+
+#slideshow .link_left {
+    position: absolute;
+    left: 576px;
+    top: 94px;
+}
+
+#slideshow .link_right {
+    position: absolute;
+    left: -6px;
+    top: 88px;
+}
+
+.sf_content h1 {
+    font-size: 18px;
+    margin-left: 5px;
+}
+
+.carousel-indicators {
+    position: absolute;
+    top: 235px;
+    right: 52px;
+}
+
+.footer_section {
+    padding-bottom: 20px;
+}
+
+.footer_section .menu_bottom {
+    width: 569px;
+    min-height: 250px;
+    position: absolute;
+    right: 0px;
+    font-size: 12px;
+    color: #FFFFFF;
+    font-family: 'Josefin Sans', sans-serif;
+    font-weight: 400;
+    line-height: 0px;
+    margin-top: 20px;
+}
+
+.footer_section .menu_bottom .span3 a {
+    font-size: 14px;
+    line-height: 22px;
+    color: white;
+}
+
+.footer_section .menu_bottom .span3 li {
+    list-style: none;
+}
+
+.footer_section .menu_bottom .span3 ul {
+    margin: 0;
+    padding: 0;
+    background-image: url('/themes/mittendrin/images/pasek_stopka.png');
+    background-repeat: no-repeat;
+    min-height: 200px;
+    padding-left: 15px;
+    padding-top: 15px;
+}
+
+.footer_section .menu_bottom .span3 ul li {
+    list-style: none;
+    font-size: 14px;
+    line-height: 19px;
+    font-family: 'Josefin Sans', sans-serif;
+    font-weight: 400;
+}
+
+.footer_section .menu_bottom .span3 ul li a {
+    color: #E4E2BF;
+    font-size: 12px;
+    line-height: 18px;
+}
+
+.menu_line {
+    position: relative;
+    height: 30px;
+    background-color: red;
+    width: 100%;
+}
+
+.menu_line .line_top {
+    position: absolute;
+    top: 3px;
+    left: 0px;
+    background-image: url('/themes/mittendrin/images/krechamenuglowne.png');
+    background-repeat: no-repeat;
+    background-position: center;
+    width: 100%;
+    height: 5px;
+}
+
+.menu_line .line_bottom {
+    position: absolute;
+    top: 38px;
+    background-image: url('/themes/mittendrin/images/krechamenuglowne.png');
+    background-repeat: no-repeat;
+    background-position: center;
+    width: 100%;
+    height: 5px;
+}
+
+.post_premium .header {
+    border: 1px solid black;
+    width: 220px;
+    min-height: 16px;
+    background-color: transparent;
+    line-height: 20px;
+    font-size: 17px;
+    text-align: center;
+    font-family: 'Josefin Sans', sans-serif;
+    font-weight: 400;
+    position: relative;
+    margin-left: 40px;
+    margin-top: 6px;
+    padding: 6px;
+    margin-bottom: 12px;
+
+}
+
+.post_premium .header span {
+    color: #4D7ED9;
+    font-family: 'Josefin Sans', sans-serif;
+    font-weight: 700;
+}
+
+.post_premium .line_top {
+    background-image: url('/themes/mittendrin/images/slide_post_right_pion.png');
+    width: 272px;
+    height: 3px;
+    margin-left: 20px;
+    margin-top: 11px;
+}
+
+.post_premium .line_bottom {
+    background-image: url('/themes/mittendrin/images/slide_post_right_pion_bottom.png');
+    width: 272px;
+    height: 3px;
+    margin-left: 20px;
+    margin-top: -7px;
+}
+
+.post_premium .widget-scroll-prev {
+    background-image: url('/themes/mittendrin/images/button_pion_slideshow.png') !important;
+    width: 72px;
+    height: 18px;
+    margin-left: 115px;
+}
+
+.post_premium .widget-scroll-next {
+    background-image: url('/themes/mittendrin/images/button_pion_slideshow_bottom.png') !important;
+    width: 72px;
+    height: 18px;
+    margin-left: 115px;
+    margin-top: 12px;
+}
+
+.post_premium a {
+    color: #4D7ED9;
+}
+
+.post_premium img {
+    margin-left: 0px !important;
+}
+
+.post_premium ul li {
+    list-style: none;
+}
+
+.post_premium {
+    margin-top: 19px !important;
+}
+
+.post_menu_top {
+    width: 100%;
+    border-color: #000000;
+    text-align: center;
+    height: 27px;
+    position: absolute;
+    top: 228px;
+    left: 0px;
+    text-align: center;
+}
+
+.post_menu_top a {
+    line-height: 20px;
+    font-size: 13px;
+    color: #000000;
+    text-align: center;
+    font-family: 'Josefin Sans', sans-serif;
+    font-weight: 400;
+    background-color: #FFFFFF;
+    padding: 5px;
+    margin-left: -3px;
+}
+
+.post_menu_top a:hover {
+    text-decoration: none;
+    color: #0088cc !important;
+}
+
+.post_homepage {
+    position: relative;
+}
+
+.post_homepage h3 {
+    color: #4D7ED9;
+    font-family: 'Josefin Sans', sans-serif;
+    font-weight: 700;
+    line-height: 18px;
+    font-size: 15px;
+    margin-left: 5px;
+}
+
+.post_homepage .post_type_1 {
+    position: absolute;
+    left: 162px;
+    top: 95px;
+}
+
+.post_homepage .post_list_next a h3 {
+    font-family: 'Josefin Sans', sans-serif;
+    font-weight: 400;
+    color: black !important;
+}
+
+.post_homepage .post_catalog {
+    width: 100%;
+    min-height: 20px;
+    background-color: transparent;
+    color: #4D7ED9;
+    font-size: 17px;
+    line-height: 20px;
+    font-family: 'Josefin Sans', sans-serif;
+    font-weight: 400;
+    margin-left: 7px;
+    margin-top: 11px;
+    border-bottom: 1px solid #4D7ED9;
+    margin-bottom: 10px;
+}
+
+.post {
+    width: 600px !important;
+    margin-left: 10px !important;
+}
+
+.post img {
+    margin: 0px;
+}
+
+.post .post_location {
+    height: 20px;
+    overflow: hidden;
+    background-image: url('/themes/mittendrin/images/kropa-post.png');
+    background-repeat: no-repeat;
+    background-position: left;
+    padding-left: 15px;
+    font-family: 'Josefin Sans', sans-serif;
+    font-size: 13px;
+    padding-top: 4px;
+}
+
+.post .post_location a {
+    color: #4D7ED9;
+    font-family: 'Josefin Sans', sans-serif;
+    font-weight: 700;
+    font-size: 13px;
+}
+
+.post a h3 {
+    font-size: 18px;
+    line-height: 22px;
+    font-family: 'Josefin Sans', sans-serif;
+    font-weight: 700;
+    color: black;
+    margin-bottom: 0px;
+    margin-left: 0px;
+    margin-top: 15px;
+}
+
+.post .header {
+    font-size: 18px;
+    line-height: 22px;
+    font-family: 'Josefin Sans', sans-serif;
+    font-weight: 400;
+    color: black;
+    min-height: 25px;
+    max-height: 230px;
+    margin-top: 15px;
+    overflow: hidden;
+    line-height: 22px;
+}
+
+.post .header p {
+    margin-left: 0px !important;
+}
+
+.post .description_long {
+    font-size: 16px;
+    line-height: 18px;
+    font-family: 'Josefin Sans', sans-serif;
+    font-weight: 400;
+    color: black;
+}
+
+.post .description_long p {
+    margin-left: 0px !important;
+    margin-top: 15px;
+}
+
+.post .line {
+    width: 100%;
+    margin-bottom: 12px;
+    background-image: url('/themes/mittendrin/images/pasek_menu.png');
+    background-position: -20px;
+    width: 100%;
+    height: 1px;
+}
+
+.post .more_label {
+    text-align: center;
+    width: 53px;
+    height: 21px;
+    margin: 0 auto;
+    position: absolute;
+    bottom: 0px;
+    right: 0px;
+}
+
+.post .more_label a {
+    line-height: 20px;    
+    font-size: 11px;
+    text-align: center;
+    font-family: 'Josefin Sans', sans-serif;
+    font-weight: 600;
+    color: #4D7ED9;
+}
+
+.post_show h1 {
+
+}
+
+#album_month {
+    width: 321px;
+    border-width: 1px;
+    border-style: solid;
+    border-color: #000000;
+    background-color: transparent;
+    padding-bottom: 6px;
+    margin-top: 22px;
+    position: relative;
+    right: -22px;
+}
+
+#album_month img {
+    margin-top: 7px;
+}
+
+#album_month h4 {
+    font-size: 16px;
+    line-height: 19px;
+    color: #4D7ED9;
+    font-family: 'Josefin Sans', sans-serif;
+    font-weight: 700;
+    margin-top: 2px;
+}
+
+#album_month p {
+    font-size: 13px;
+    line-height: 16px;
+    font-family: 'Josefin Sans', sans-serif;
+    font-weight: 400;
+    margin-right: 7px;
+    margin-left: 0px;
+}
+
+.margin-top-50 {
+    margin-top: 54px;
+}
+
+.no-margin-left {
+    margin-left: 0px !important;
+}
+
+.margin-left-col6:first-child {
+    margin-left: 7px !important;
+}
+
+.margin-bottom-20 {
+    margin-bottom: 20px;
+}
+
+.image_bg_params {
+    background-size: cover;
+    background-position: center;
+    display: block;
+}
+
+.post_list_span_6 {
+    height: 410px;position: relative;
+}
+
+.post-premium-a a {
+    font-size: 14px;
+    font-family: 'Josefin Sans', sans-serif;
+    font-weight: 700;
+    color: black;
+}
+
+.post-premium-a .span6,.span9 {
+    height: 60px;
+    overflow: hidden;
+}
+
+.caroufredsel_wrapper {
+    margin-top: 10px !important;
+    height: 320px !important;
+}
+
+.page_list {
+    min-width: 100px;
+    margin: 0 auto;
+}
+
+.page_list li {
+    float: left;
+    list-style: none;
+    background-color: darkgray;
+    border: 1px solid black;
+    margin-right: 5px;
+}
+
+.page_list li a {
+    padding: 5px;
+    color: black;
+}
+
+.page_list_div {
+    text-align:center;
+}
+
+.page_list_div ul {
+    display:inline-table;
+    margin-top: 20px;
+}
+
+.page_list_div ul li {
+    display:inline;
+}
+
+#radio-player {
+    width: 287px;
+    height: 100px;
+    position: absolute;
+    bottom: 10px;
+    right: 0px;
+}
+
+#radio-player .player_box {
+    position: relative;
+    width: 100%;
+    height: 100px;
+}
+
+#radio-player .player_box .menu {
+    background-image: url('/themes/mittendrin/images/baza.png');
+    width: 287px;
+    height: 48px;
+    position: absolute;
+    top: 73px;
+}
+
+#radio-player .player_box .menu_line {
+    background-image: url('/themes/mittendrin/images/krechamalapion.jpg');
+    width: 1px;
+    height: 17px;
+    position: absolute;
+    top: 78px;
+    left: 121px;
+}
+
+#radio-player .player_box .menu ul li {
+    list-style: none;
+    float: left;
+    padding-top: 4px;
+    width: 87px;
+    margin-left: -4px;
+}
+
+#radio-player .player_box .menu ul li a {
+    font-family: 'Josefin Sans', sans-serif;
+    font-weight: bolder;
+    color: black !important;
+    font-size: 14px;
+}
+
+#radio-player .player_box .menu ul li a span {
+    color: white;
+}
+
+#radio-player .player_box .online_box {
+    background-image: url('/themes/mittendrin/images/tloobokmic.png');
+    width: 221px;
+    height: 83px;
+    position: absolute;
+    left: 33px;
+}
+
+#radio-player .player_box .mic {
+    background-image: url('/themes/mittendrin/images/mic.png');
+    width: 40px;
+    height: 111px;
+    position: absolute;
+    top: -24px;
+    left: -20px;
+}
+
+#radio-player .player_box .track-name p {
+    text-align: left;
+    font-family: 'Josefin Sans', sans-serif;
+    font-size: 16px;
+    font-weight: bold;
+    margin-top: 10px;
+    margin-left: 29px;
+}
+
+.position-relative {
+    position: relative;
+    padding-bottom: 30px;
+}
+
+.movie_continer {
+    position: relative;
+    font-size: 16px !important;
+
+}
+
+movie_continer .movie_row .description p {    
+    font-size: 16px !important;
+}
+
+.movie_continer .page_list_div {
+    position: absolute;
+    bottom: -41px;
+}
+
+.movie_continer .title {
+    position: absolute;
+    top: 14px;
+    left: 41px;
+    font-size: 16px;
+    font-weight: bold;
+    background-image: url(/themes/mittendrin/images/kropa-post.png);
+    background-repeat: no-repeat;
+    background-position: 10px 6px;
+    padding-left: 30px;
+    color: #4D7ED9;
+}
+
+.movie_continer .movie_row {
+    cursor: pointer;
+
+}
+
+.movie_continer .movie_row a {
+    color: black;
+    font-size: 14px;
+}
+
+.movie_continer .movie_row h2 {
+    font-size: 16px;
+    line-height: 20px;
+    margin-left: 7px;
+}
+
+.movie_continer .movie_row h2 a {
+    color: black;
+    font-size: 16px !important;
+}
+
+.movie_continer .movie_row .additional {
+    position: absolute;
+    bottom: -33px;
+    right: 10px;
+}
+
+.movie_continer .movie_row .additional span {
+    font-size: 12px;
+}
+
+.img {
+    filter: url("data:image/svg+xml;utf8,<svg xmlns=\'http://www.w3.org/2000/svg\'><filter id=\'grayscale\'><feColorMatrix type=\'matrix\' values=\'0.3333 0.3333 0.3333 0 0 0.3333 0.3333 0.3333 0 0 0.3333 0.3333 0.3333 0 0 0 0 0 1 0\'/></filter></svg>#grayscale"); /* Firefox 10+, Firefox on Android */
+    filter: gray; /* IE6-9 */
+    -webkit-filter: grayscale(100%); /* Chrome 19+, Safari 6+, Safari 6+ iOS */
+}
+
+.img:hover {
+    filter: url("data:image/svg+xml;utf8,<svg xmlns=\'http://www.w3.org/2000/svg\'><filter id=\'grayscale\'><feColorMatrix type=\'matrix\' values=\'1 0 0 0 0, 0 1 0 0 0, 0 0 1 0 0, 0 0 0 1 0\'/></filter></svg>#grayscale");
+    -webkit-filter: grayscale(0%);
+}
+
+.fb-comments {
+    margin-left: 23px;
+}

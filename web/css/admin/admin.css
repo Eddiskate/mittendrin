@@ -1,0 +1,61 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : 2013-12-01, 10:01:49
+    Author     : eddi
+*/
+
+.error_list { list-style: none;padding-top: 5px; }
+
+.sortable-list {
+    padding-left: 0px;
+    margin-left: 0px;
+}
+
+.sortable-list li {
+    list-style: none;
+    border-bottom: 1px solid darkgray;
+    min-height: 35px;
+    width: 100%;
+    display: block;
+}
+
+.sortable-list li .row-fluid {
+    min-height: 35px;
+}
+
+.sortable-list li .row-fluid div {
+    padding-top: 7px;
+}
+
+.sortable-list li .row-fluid div:first-child {
+    padding-left: 7px;
+}
+
+.sortable-item .row-fluid:hover {
+    background-color: lightgrey;
+}
+
+.bp-table-header {
+    font-size: 10px;
+    font-weight: bold;
+    line-height: 10px;
+}
+
+.bp-table {
+    font-size: 12px;
+}
+
+.bp-table .bp-table-products-name {
+    height: 29px;
+    overflow: hidden;
+}
+
+.broadcast-count {
+    display: block;
+    padding: 8px;
+    text-align: right;
+}

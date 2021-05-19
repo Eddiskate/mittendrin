@@ -1,0 +1,41 @@
+/*!
+ * Simplex Admin Template - Version 1.0
+ *
+ * Copyright 2011, Prosoftware.pl Dominik Cwiklik
+ * @see http://www.prosoftware.pl/simplex-admin-template/
+ * @license MIT http://www.opensource.org/licenses/mit-license.php
+ *
+ * Includes jQuery | http://jquery.com/ | Copyright 2011, John Resig | Dual licensed under the MIT or GPL Version 2 licenses.
+ * Includes Uni-form | http://sprawsm.com/uni-form/ | Copyright (c) 2010, Dragan Babic | Released under the MIT License.
+ * Includes Facebox | http://defunkt.io/facebox/ | Copyright (c) 2007/2008 Chris Wanstrath  | Released under the MIT License.
+ *
+ * Date: Fri Mar 25 00:29:24 2011
+ */
+
+body { font-family: "lucida grande", tahoma, helvetica, arial, sans-serif; font-size: 12px; color: #333; width: 400px; background: #ccc; margin: 200px auto; }
+
+/* elements */
+form .simpleError { background: #fefdbf!important; }
+#passwordForgot { color: #aaa; float: left; margin: 11px; }
+#reminderForm { width: 500px; }
+
+/* content box */
+.round { position: relative; border-radius: 8px; -moz-border-radius: 8px; -webkit-border-radius: 8px; border: 1px solid #eee; margin-bottom: 20px; background: url(../img/round-bg.png) repeat-x; overflow:hidden; background-color: #fff; }
+.round-head h2 { float: left; margin: 10px 0 25px 15px; padding: 0; text-shadow: 0px 1px white;  }
+.round-content { padding: 0 15px 15px 15px; clear: both; }
+.round-content .text { padding: 10px; }
+
+/* messages */
+.error, .notice, .success { padding:.8em; margin-bottom:1em; border:2px solid #ddd; }
+.error { background-color:#FBE3E4!important;color:#8a1f11;border-color:#FBC2C4; }
+.notice { background-color:#FFF6BF!important;color:#514721;border-color:#FFD324; }
+.success { background-color:#E6EFC2!important;color:#264409;border-color:#C6D880; }
+.error a { color:#8a1f11; }
+.notice a { color:#514721; }
+.success a { color:#264409; }
+
+.error h4, .notice h4, .success h4 { margin: 0 0 10px 0; }
+.error.icon, .notice.icon, .success.icon { padding-left: 45px; }
+.success.icon { background: url(../img/icons/color-success.gif) no-repeat 10px; }
+.error.icon { background: url(../img/icons/color-error.gif) no-repeat 10px; }
+.notice.icon { background: url(../img/icons/color-notice.gif) no-repeat 10px; }
