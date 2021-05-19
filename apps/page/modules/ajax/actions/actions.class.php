@@ -54,7 +54,6 @@ class ajaxActions extends sfActions
             $html .= '<p>' . $request->getParameter('music_service') . '</p>';
 
             try {
-                echo sfConfig::get('bpcms_stimme_mail_info');die;
                 $message = Swift_Message::newInstance();
                 $message->setSubject('Stime - nowe życzenia');
                 $message->setBody($html, 'text/html');
