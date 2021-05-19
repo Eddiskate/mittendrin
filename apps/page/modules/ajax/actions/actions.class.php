@@ -62,7 +62,7 @@ class ajaxActions extends sfActions
 
                 sfContext::getInstance()->getMailer()->send($message);
             } catch (Exception $e) {
-                echo $e;
+                return $e;
             }
 
             $response['message'] = LANG_STIMME_THANKS_DESCRIPTION;
