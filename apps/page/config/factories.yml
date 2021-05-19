@@ -51,7 +51,8 @@ all:
         class: Swift_SmtpTransport
         param:
           host:       mittendrin.pl
-          port:       25
+          port:       587
           encryption: 
           username:   no-reply@mittendrin.pl
           password:   rkd4Am$Ezh
+          verify_peer: 0
