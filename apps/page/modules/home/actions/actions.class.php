@@ -74,8 +74,6 @@ class homeActions extends sfActions
                 die;
             }
 
-
-
             echo 'wysłane';die;
         }
 
