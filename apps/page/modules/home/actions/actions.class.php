@@ -69,6 +69,8 @@ class homeActions extends sfActions
                 $message->setTo('eddiskate@gmail.com');
 
                 $massage_status = sfContext::getInstance()->getMailer()->send($message);
+
+                echo 'zostało wysłane';die;
             } catch (Exception $exception) {
                 BpDebug::printr($exception);
                 die;
@@ -76,7 +78,7 @@ class homeActions extends sfActions
 
         }
 
-        echo 'wysłane';die;
+        echo 'nie miał danych';die;
 
         $this->getUser()->setFlash('success_mail', '<p id="success_mail">Dziękujemy za wysałanie wiadomości.<br> Skontaktujemy się z Państwem najszybciej jak będziemy mogli.</p>');
 
