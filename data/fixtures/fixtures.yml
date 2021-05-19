@@ -1,0 +1,129 @@
+# # Populate this file with data to be loaded by your ORM's *:data-load task.
+# # You can create multiple files in this directory (i.e. 010_users.yml,
+# # 020_articles.yml, etc) which will be loaded in alphabetical order.
+# # 
+# # See documentation for your ORM's *:data-load task for more information.
+# 
+Users:
+   admin:
+     name:     Konto
+     passwd:   21232f297a57a5a743894a0e4a801fc3
+     lastname: Administracyjne
+     mail:     admin
+     active:   1
+
+GalleryCatalog:
+    webimages:
+        idgallery_catalog: 1
+        catalog_name: Biblioteka zdjęć
+        no_category: 1
+        publication: 0
+        
+GalleryCategory:
+    webimages_nocategory:
+        idgallery_category: 1
+        category_name: no_category
+        publication: 0
+        gallery_catalog_idgallery_catalog: 1
+        
+Post:
+    first_post:
+        idpost: 1
+        title: Witamy w sieci!
+        description: Dziękujemy za instalacje systemu CMS firmy blackPAGE. Proszę się zalogować w panelu administracyjnym w celu personalizacji produktu.
+        created_at: 2013-11-16
+        archiv: 0
+        newsletter: 0
+        avatar: ''
+        
+Slideshow:
+    first:
+        idslideshow: 1
+        file_name: 0d36fa942e3321993a8d90719c94a0866ce585bf.jpg
+        body_h1: Pierwszy slideshow!
+        body_p: Lorem Ipsum jest tekstem stosowanym jako przykładowy wypełniacz w przemyśle poligraficznym.
+        publication: 1
+        default_position: 1
+        body_link: 'http://blackpage.pl'        
+    next:
+        idslideshow: 2
+        file_name: 261a2eb09056f01285973a805693e8009e5731d5.jpg
+        body_h1: Drugi slideshow!
+        body_p: Lorem Ipsum jest tekstem stosowanym jako przykładowy wypełniacz w przemyśle poligraficznym.
+        publication: 1
+        default_position: 0
+        body_link: 'http://blackpage.pl'        
+        
+cart:
+    aboutus:
+        idcart: 1
+        cart_name: O NAS
+        title_alt: O NAS
+        title_page: O NAS
+        no_page: 1
+        publication: 1
+        position: 0
+        position_order: 1
+        link_active: 0
+        cart_name_title: wszystko o nas
+        
+    offer:
+        idcart: 2
+        cart_name: OFERTA
+        title_alt: OFERTA
+        title_page: OFERTA
+        no_page: 1
+        publication: 1
+        position: 0
+        position_order: 2
+        link_active: 0
+        cart_name_title: co możemy?
+        
+    contact:
+        idcart: 3
+        cart_name: KONTAKT
+        title_alt: KONTAKT Z NAMI
+        title_page: Kontakt z nami
+        no_page: 1
+        publication: 1
+        position: 0
+        position_order: 3
+        link_active: 0
+        cart_name_title: szybki kontakt
+        
+page:
+    aboutus_page:
+        idpage: 1
+        page_name: default_page
+        page_title: O NAS
+        body: Strona w budowie zapraszamy ponownie!
+        cart_idcart: 1
+        publication: 1
+        position: 0
+        position_order: 0
+        rows: 0
+        page_default: 1
+
+    offer_page:
+        idpage: 2
+        page_name: default_page
+        page_title: OFERTA
+        body: Strona w budowie zapraszamy ponownie!
+        cart_idcart: 2
+        publication: 1
+        position: 0
+        position_order: 0
+        rows: 0
+        page_default: 1
+
+    contact_page:
+        idpage: 3
+        page_name: default_page
+        page_title: KONTAKT
+        body: Strona w budowie zapraszamy ponownie!
+        cart_idcart: 3
+        publication: 1
+        position: 0
+        position_order: 0
+        rows: 0
+        page_default: 1

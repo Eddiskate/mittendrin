@@ -1,0 +1,2555 @@
+Boxes:
+  connection: doctrine
+  tableName: boxes
+  columns:
+    idboxes:
+      type: integer(4)
+      fixed: false
+      unsigned: false
+      primary: true
+      autoincrement: true
+    title:
+      type: string(255)
+      fixed: false
+      unsigned: false
+      primary: false
+      notnull: false
+      autoincrement: false
+    description:
+      type: string()
+      fixed: false
+      unsigned: false
+      primary: false
+      notnull: false
+      autoincrement: false
+    image:
+      type: string(255)
+      fixed: false
+      unsigned: false
+      primary: false
+      notnull: false
+      autoincrement: false
+    url_for_page:
+      type: string(255)
+      fixed: false
+      unsigned: false
+      primary: false
+      notnull: false
+      autoincrement: false
+    publication:
+      type: integer(4)
+      fixed: false
+      unsigned: false
+      primary: false
+      notnull: false
+      autoincrement: false
+    position_row:
+      type: integer(4)
+      fixed: false
+      unsigned: false
+      primary: false
+      notnull: false
+      autoincrement: false
+    target:
+      type: integer(4)
+      fixed: false
+      unsigned: false
+      primary: false
+      notnull: false
+      autoincrement: false
+    show_homepage:
+      type: integer(4)
+      fixed: false
+      unsigned: false
+      primary: false
+      default: '0'
+      notnull: false
+      autoincrement: false
+    show_page:
+      type: integer(4)
+      fixed: false
+      unsigned: false
+      primary: false
+      default: '0'
+      notnull: false
+      autoincrement: false
+BpcmsAdminI18n:
+  connection: doctrine
+  tableName: bpcms_admin_i18n
+  columns:
+    bpcms_lang_install_signature:
+      type: string(45)
+      fixed: false
+      unsigned: false
+      primary: true
+      autoincrement: false
+    lang_text_value:
+      type: string()
+      fixed: false
+      unsigned: false
+      primary: false
+      notnull: false
+      autoincrement: false
+    bpcms_lang_admin_text_name:
+      type: string(200)
+      fixed: false
+      unsigned: false
+      primary: true
+      autoincrement: false
+BpcmsAlbumMonth:
+  connection: doctrine
+  tableName: bpcms_album_month
+  columns:
+    idbpcms_album_month:
+      type: integer(4)
+      fixed: false
+      unsigned: false
+      primary: true
+      autoincrement: true
+    title:
+      type: string(255)
+      fixed: false
+      unsigned: false
+      primary: false
+      notnull: false
+      autoincrement: false
+    description:
+      type: string()
+      fixed: false
+      unsigned: false
+      primary: false
+      notnull: false
+      autoincrement: false
+    link:
+      type: string(255)
+      fixed: false
+      unsigned: false
+      primary: false
+      notnull: false
+      autoincrement: false
+    publication:
+      type: integer(4)
+      fixed: false
+      unsigned: false
+      primary: false
+      default: '0'
+      notnull: false
+      autoincrement: false
+    avatar:
+      type: string(45)
+      fixed: false
+      unsigned: false
+      primary: false
+      notnull: false
+      autoincrement: false
+  relations:
+    BpcmsAlbumMonthI18n:
+      local: idbpcms_album_month
+      foreign: album_month_idalbum_month
+      type: many
+BpcmsAlbumMonthI18n:
+  connection: doctrine
+  tableName: bpcms_album_month_i18n
+  columns:
+    album_month_idalbum_month:
+      type: integer(4)
+      fixed: false
+      unsigned: false
+      primary: true
+      autoincrement: false
+    bpcms_lang_install_signature:
+      type: string(45)
+      fixed: false
+      unsigned: false
+      primary: true
+      autoincrement: false
+    lang_title:
+      type: string(255)
+      fixed: false
+      unsigned: false
+      primary: false
+      notnull: false
+      autoincrement: false
+    lang_description:
+      type: string()
+      fixed: false
+      unsigned: false
+      primary: false
+      notnull: false
+      autoincrement: false
+  relations:
+    BpcmsAlbumMonth:
+      local: album_month_idalbum_month
+      foreign: idbpcms_album_month
+      type: one
+    BpcmsLangInstall:
+      local: bpcms_lang_install_signature
+      foreign: signature
+      type: one
+BpcmsCartI18n:
+  connection: doctrine
+  tableName: bpcms_cart_i18n
+  columns:
+    cart_idcart:
+      type: integer(4)
+      fixed: false
+      unsigned: false
+      primary: true
+      autoincrement: false
+    lang_cart_name:
+      type: string(255)
+      fixed: false
+      unsigned: false
+      primary: false
+      notnull: false
+      autoincrement: false
+    lang_title_alt:
+      type: string(255)
+      fixed: false
+      unsigned: false
+      primary: false
+      notnull: false
+      autoincrement: false
+    lang_title_page:
+      type: string(255)
+      fixed: false
+      unsigned: false
+      primary: false
+      notnull: false
+      autoincrement: false
+    lang_cart_name_title:
+      type: string(45)
+      fixed: false
+      unsigned: false
+      primary: false
+      notnull: false
+      autoincrement: false
+    bpcms_lang_install_signature:
+      type: string(45)
+      fixed: false
+      unsigned: false
+      primary: true
+      autoincrement: false
+    name_url:
+      type: string(255)
+      fixed: false
+      unsigned: false
+      primary: false
+      notnull: false
+      autoincrement: false
+  relations:
+    BpcmsLangInstall:
+      local: bpcms_lang_install_signature
+      foreign: signature
+      type: one
+    Cart:
+      local: cart_idcart
+      foreign: idcart
+      type: one
+BpcmsDiplomas:
+  connection: doctrine
+  tableName: bpcms_diplomas
+  columns:
+    idbpcms_diplomas:
+      type: integer(4)
+      fixed: false
+      unsigned: false
+      primary: true
+      autoincrement: true
+    name:
+      type: string(255)
+      fixed: false
+      unsigned: false
+      primary: false
+      notnull: false
+      autoincrement: false
+    class:
+      type: string(45)
+      fixed: false
+      unsigned: false
+      primary: false
+      notnull: false
+      autoincrement: false
+    title:
+      type: string(255)
+      fixed: false
+      unsigned: false
+      primary: false
+      notnull: false
+      autoincrement: false
+    received:
+      type: string(45)
+      fixed: false
+      unsigned: false
+      primary: false
+      notnull: false
+      autoincrement: false
+    image:
+      type: string(255)
+      fixed: false
+      unsigned: false
+      primary: false
+      notnull: false
+      autoincrement: false
+BpcmsDownloadCatalogI18n:
+  connection: doctrine
+  tableName: bpcms_download_catalog_i18n
+  columns:
+    download_catalog_iddownload_catalog:
+      type: integer(4)
+      fixed: false
+      unsigned: false
+      primary: true
+      autoincrement: false
+    bpcms_lang_install_signature:
+      type: string(45)
+      fixed: false
+      unsigned: false
+      primary: true
+      autoincrement: false
+    lang_name:
+      type: string(255)
+      fixed: false
+      unsigned: false
+      primary: false
+      notnull: false
+      autoincrement: false
+  relations:
+    BpcmsLangInstall:
+      local: bpcms_lang_install_signature
+      foreign: signature
+      type: one
+    DownloadCatalog:
+      local: download_catalog_iddownload_catalog
+      foreign: iddownload_catalog
+      type: one
+BpcmsDownloadI18n:
+  connection: doctrine
+  tableName: bpcms_download_i18n
+  columns:
+    download_iddownload:
+      type: integer(4)
+      fixed: false
+      unsigned: false
+      primary: true
+      autoincrement: false
+    bpcms_lang_install_signature:
+      type: string(45)
+      fixed: false
+      unsigned: false
+      primary: true
+      autoincrement: false
+    lang_title:
+      type: string(255)
+      fixed: false
+      unsigned: false
+      primary: false
+      notnull: false
+      autoincrement: false
+  relations:
+    BpcmsLangInstall:
+      local: bpcms_lang_install_signature
+      foreign: signature
+      type: one
+    Download:
+      local: download_iddownload
+      foreign: iddownload
+      type: one
+BpcmsGalleryCatalogI18n:
+  connection: doctrine
+  tableName: bpcms_gallery_catalog_i18n
+  columns:
+    gallery_catalog_idgallery_catalog:
+      type: integer(4)
+      fixed: false
+      unsigned: false
+      primary: true
+      autoincrement: false
+    bpcms_lang_install_signature:
+      type: string(45)
+      fixed: false
+      unsigned: false
+      primary: true
+      autoincrement: false
+    lang_catalog_name:
+      type: string(45)
+      fixed: false
+      unsigned: false
+      primary: false
+      notnull: false
+      autoincrement: false
+  relations:
+    BpcmsLangInstall:
+      local: bpcms_lang_install_signature
+      foreign: signature
+      type: one
+    GalleryCatalog:
+      local: gallery_catalog_idgallery_catalog
+      foreign: idgallery_catalog
+      type: one
+BpcmsGalleryCategoryI18n:
+  connection: doctrine
+  tableName: bpcms_gallery_category_i18n
+  columns:
+    gallery_category_idgallery_category:
+      type: integer(4)
+      fixed: false
+      unsigned: false
+      primary: true
+      autoincrement: false
+    bpcms_lang_install_signature:
+      type: string(45)
+      fixed: false
+      unsigned: false
+      primary: true
+      autoincrement: false
+    lang_category_name:
+      type: string(255)
+      fixed: false
+      unsigned: false
+      primary: false
+      notnull: false
+      autoincrement: false
+  relations:
+    BpcmsLangInstall:
+      local: bpcms_lang_install_signature
+      foreign: signature
+      type: one
+    GalleryCategory:
+      local: gallery_category_idgallery_category
+      foreign: idgallery_category
+      type: one
+BpcmsGalleryI18n:
+  connection: doctrine
+  tableName: bpcms_gallery_i18n
+  columns:
+    gallery_idgallery:
+      type: integer(4)
+      fixed: false
+      unsigned: false
+      primary: true
+      autoincrement: false
+    bpcms_lang_install_signature:
+      type: string(45)
+      fixed: false
+      unsigned: false
+      primary: true
+      autoincrement: false
+    lang_file_title:
+      type: string(255)
+      fixed: false
+      unsigned: false
+      primary: false
+      notnull: false
+      autoincrement: false
+  relations:
+    BpcmsLangInstall:
+      local: bpcms_lang_install_signature
+      foreign: signature
+      type: one
+    Gallery:
+      local: gallery_idgallery
+      foreign: idgallery
+      type: one
+BpcmsLangAdmin:
+  connection: doctrine
+  tableName: bpcms_lang_admin
+  columns:
+    text_name:
+      type: string(200)
+      fixed: false
+      unsigned: false
+      primary: true
+      autoincrement: false
+    text_value:
+      type: string(45)
+      fixed: false
+      unsigned: false
+      primary: false
+      notnull: false
+      autoincrement: false
+BpcmsLangInstall:
+  connection: doctrine
+  tableName: bpcms_lang_install
+  columns:
+    name:
+      type: string(255)
+      fixed: false
+      unsigned: false
+      primary: false
+      notnull: false
+      autoincrement: false
+    signature:
+      type: string(45)
+      fixed: false
+      unsigned: false
+      primary: true
+      autoincrement: false
+    active:
+      type: integer(4)
+      fixed: false
+      unsigned: false
+      primary: false
+      notnull: false
+      autoincrement: false
+    publication:
+      type: integer(4)
+      fixed: false
+      unsigned: false
+      primary: false
+      notnull: false
+      autoincrement: false
+    lang_icons:
+      type: string(45)
+      fixed: false
+      unsigned: false
+      primary: false
+      notnull: false
+      autoincrement: false
+  relations:
+    BpcmsAlbumMonthI18n:
+      local: signature
+      foreign: bpcms_lang_install_signature
+      type: many
+    BpcmsCartI18n:
+      local: signature
+      foreign: bpcms_lang_install_signature
+      type: many
+    BpcmsDownloadCatalogI18n:
+      local: signature
+      foreign: bpcms_lang_install_signature
+      type: many
+    BpcmsDownloadI18n:
+      local: signature
+      foreign: bpcms_lang_install_signature
+      type: many
+    BpcmsGalleryCatalogI18n:
+      local: signature
+      foreign: bpcms_lang_install_signature
+      type: many
+    BpcmsGalleryCategoryI18n:
+      local: signature
+      foreign: bpcms_lang_install_signature
+      type: many
+    BpcmsGalleryI18n:
+      local: signature
+      foreign: bpcms_lang_install_signature
+      type: many
+    BpcmsPageI18n:
+      local: signature
+      foreign: bpcms_lang_install_signature
+      type: many
+    BpcmsPostCatalogI18n:
+      local: signature
+      foreign: bpcms_lang_install_signature
+      type: many
+    BpcmsPostI18n:
+      local: signature
+      foreign: bpcms_lang_install_signature
+      type: many
+    BpcmsSlideshowI18n:
+      local: signature
+      foreign: bpcms_lang_install_signature
+      type: many
+    BpcmsTextI18n:
+      local: signature
+      foreign: bpcms_lang_install_signature
+      type: many
+    BpcmsYtCatalogI18n:
+      local: signature
+      foreign: bpcms_lang_install_signature
+      type: many
+    BpcmsYtMoviesI18n:
+      local: signature
+      foreign: bpcms_lang_install_signature
+      type: many
+    RadioStationI18n:
+      local: signature
+      foreign: bpcms_lang_install_signature
+      type: many
+    RadioStationScheduleI18n:
+      local: signature
+      foreign: bpcms_lang_install_signature
+      type: many
+BpcmsLangText:
+  connection: doctrine
+  tableName: bpcms_lang_text
+  columns:
+    text_name:
+      type: string(200)
+      fixed: false
+      unsigned: false
+      primary: true
+      autoincrement: false
+    text_value:
+      type: string()
+      fixed: false
+      unsigned: false
+      primary: false
+      notnull: false
+      autoincrement: false
+  relations:
+    BpcmsTextI18n:
+      local: text_name
+      foreign: bpcms_lang_text_text_name
+      type: many
+BpcmsPageI18n:
+  connection: doctrine
+  tableName: bpcms_page_i18n
+  columns:
+    page_idpage:
+      type: integer(4)
+      fixed: false
+      unsigned: false
+      primary: true
+      autoincrement: false
+    bpcms_lang_install_signature:
+      type: string(45)
+      fixed: false
+      unsigned: false
+      primary: true
+      autoincrement: false
+    lang_page_name:
+      type: string(255)
+      fixed: false
+      unsigned: false
+      primary: false
+      notnull: false
+      autoincrement: false
+    lang_page_title:
+      type: string(255)
+      fixed: false
+      unsigned: false
+      primary: false
+      notnull: false
+      autoincrement: false
+    lang_body:
+      type: string()
+      fixed: false
+      unsigned: false
+      primary: false
+      notnull: false
+      autoincrement: false
+    lang_page_name_url:
+      type: string(255)
+      fixed: false
+      unsigned: false
+      primary: false
+      notnull: false
+      autoincrement: false
+  relations:
+    BpcmsLangInstall:
+      local: bpcms_lang_install_signature
+      foreign: signature
+      type: one
+    Page:
+      local: page_idpage
+      foreign: idpage
+      type: one
+BpcmsPlaylist:
+  connection: doctrine
+  tableName: bpcms_playlist
+  columns:
+    idbpcms_playlist:
+      type: integer(4)
+      fixed: false
+      unsigned: false
+      primary: true
+      autoincrement: true
+    page_idpage:
+      type: integer(4)
+      fixed: false
+      unsigned: false
+      primary: false
+      notnull: true
+      autoincrement: false
+    plate_title:
+      type: string(255)
+      fixed: false
+      unsigned: false
+      primary: false
+      notnull: false
+      autoincrement: false
+    plate_artist:
+      type: string(255)
+      fixed: false
+      unsigned: false
+      primary: false
+      notnull: false
+      autoincrement: false
+    plate_file:
+      type: string(255)
+      fixed: false
+      unsigned: false
+      primary: false
+      notnull: false
+      autoincrement: false
+    plate_cover:
+      type: string(255)
+      fixed: false
+      unsigned: false
+      primary: false
+      notnull: false
+      autoincrement: false
+    plate_buy_link:
+      type: string(255)
+      fixed: false
+      unsigned: false
+      primary: false
+      notnull: false
+      autoincrement: false
+    publication:
+      type: integer(4)
+      fixed: false
+      unsigned: false
+      primary: false
+      default: '0'
+      notnull: false
+      autoincrement: false
+  relations:
+    Page:
+      local: page_idpage
+      foreign: idpage
+      type: one
+BpcmsPostCatalogI18n:
+  connection: doctrine
+  tableName: bpcms_post_catalog_i18n
+  columns:
+    post_catalog_idpost_catalog:
+      type: integer(4)
+      fixed: false
+      unsigned: false
+      primary: true
+      autoincrement: false
+    bpcms_lang_install_signature:
+      type: string(45)
+      fixed: false
+      unsigned: false
+      primary: true
+      autoincrement: false
+    lang_name:
+      type: string(255)
+      fixed: false
+      unsigned: false
+      primary: false
+      notnull: false
+      autoincrement: false
+  relations:
+    BpcmsLangInstall:
+      local: bpcms_lang_install_signature
+      foreign: signature
+      type: one
+    PostCatalog:
+      local: post_catalog_idpost_catalog
+      foreign: idpost_catalog
+      type: one
+BpcmsPostI18n:
+  connection: doctrine
+  tableName: bpcms_post_i18n
+  columns:
+    post_idpost:
+      type: integer(4)
+      fixed: false
+      unsigned: false
+      primary: true
+      autoincrement: false
+    bpcms_lang_install_signature:
+      type: string(45)
+      fixed: false
+      unsigned: false
+      primary: true
+      autoincrement: false
+    lang_title:
+      type: string(255)
+      fixed: false
+      unsigned: false
+      primary: false
+      notnull: false
+      autoincrement: false
+    lang_description:
+      type: string()
+      fixed: false
+      unsigned: false
+      primary: false
+      notnull: false
+      autoincrement: false
+    lang_title_recommended:
+      type: string(255)
+      fixed: false
+      unsigned: false
+      primary: false
+      notnull: false
+      autoincrement: false
+    lang_title_header:
+      type: string(255)
+      fixed: false
+      unsigned: false
+      primary: false
+      notnull: false
+      autoincrement: false
+  relations:
+    BpcmsLangInstall:
+      local: bpcms_lang_install_signature
+      foreign: signature
+      type: one
+    Post:
+      local: post_idpost
+      foreign: idpost
+      type: one
+BpcmsSlideshowI18n:
+  connection: doctrine
+  tableName: bpcms_slideshow_i18n
+  columns:
+    bpcms_lang_install_signature:
+      type: string(45)
+      fixed: false
+      unsigned: false
+      primary: true
+      autoincrement: false
+    slideshow_idslideshow:
+      type: integer(4)
+      fixed: false
+      unsigned: false
+      primary: true
+      autoincrement: false
+    lang_body_h1:
+      type: string(255)
+      fixed: false
+      unsigned: false
+      primary: false
+      notnull: false
+      autoincrement: false
+    lang_body_link:
+      type: string(255)
+      fixed: false
+      unsigned: false
+      primary: false
+      notnull: false
+      autoincrement: false
+    lang_file_name:
+      type: string(255)
+      fixed: false
+      unsigned: false
+      primary: false
+      notnull: false
+      autoincrement: false
+  relations:
+    BpcmsLangInstall:
+      local: bpcms_lang_install_signature
+      foreign: signature
+      type: one
+    Slideshow:
+      local: slideshow_idslideshow
+      foreign: idslideshow
+      type: one
+BpcmsTextI18n:
+  connection: doctrine
+  tableName: bpcms_text_i18n
+  columns:
+    bpcms_lang_install_signature:
+      type: string(45)
+      fixed: false
+      unsigned: false
+      primary: true
+      autoincrement: false
+    lang_text_value:
+      type: string()
+      fixed: false
+      unsigned: false
+      primary: false
+      notnull: false
+      autoincrement: false
+    bpcms_lang_text_text_name:
+      type: string(200)
+      fixed: false
+      unsigned: false
+      primary: true
+      autoincrement: false
+  relations:
+    BpcmsLangInstall:
+      local: bpcms_lang_install_signature
+      foreign: signature
+      type: one
+    BpcmsLangText:
+      local: bpcms_lang_text_text_name
+      foreign: text_name
+      type: one
+BpcmsTopLayer:
+  connection: doctrine
+  tableName: bpcms_top_layer
+  columns:
+    idbpcms_top_layer:
+      type: integer(4)
+      fixed: false
+      unsigned: false
+      primary: true
+      autoincrement: false
+    name:
+      type: string(255)
+      fixed: false
+      unsigned: false
+      primary: false
+      notnull: false
+      autoincrement: false
+    file_name:
+      type: string(45)
+      fixed: false
+      unsigned: false
+      primary: false
+      notnull: false
+      autoincrement: false
+    publication:
+      type: integer(4)
+      fixed: false
+      unsigned: false
+      primary: false
+      notnull: false
+      autoincrement: false
+BpcmsYtCatalog:
+  connection: doctrine
+  tableName: bpcms_yt_catalog
+  columns:
+    idbpcms_yt_catalog:
+      type: integer(4)
+      fixed: false
+      unsigned: false
+      primary: true
+      autoincrement: true
+    name:
+      type: string(255)
+      fixed: false
+      unsigned: false
+      primary: false
+      notnull: false
+      autoincrement: false
+    publication:
+      type: integer(4)
+      fixed: false
+      unsigned: false
+      primary: false
+      default: '0'
+      notnull: false
+      autoincrement: false
+  relations:
+    BpcmsYtCatalogI18n:
+      local: idbpcms_yt_catalog
+      foreign: bpcms_yt_catalog_idbpcms_yt_catalog
+      type: many
+    BpcmsYtMovies:
+      local: idbpcms_yt_catalog
+      foreign: bpcms_yt_catalog_idbpcms_yt_catalog
+      type: many
+BpcmsYtCatalogI18n:
+  connection: doctrine
+  tableName: bpcms_yt_catalog_i18n
+  columns:
+    bpcms_yt_catalog_idbpcms_yt_catalog:
+      type: integer(4)
+      fixed: false
+      unsigned: false
+      primary: true
+      autoincrement: false
+    bpcms_lang_install_signature:
+      type: string(45)
+      fixed: false
+      unsigned: false
+      primary: true
+      autoincrement: false
+    lang_name:
+      type: string(255)
+      fixed: false
+      unsigned: false
+      primary: false
+      notnull: false
+      autoincrement: false
+  relations:
+    BpcmsLangInstall:
+      local: bpcms_lang_install_signature
+      foreign: signature
+      type: one
+    BpcmsYtCatalog:
+      local: bpcms_yt_catalog_idbpcms_yt_catalog
+      foreign: idbpcms_yt_catalog
+      type: one
+BpcmsYtMovies:
+  connection: doctrine
+  tableName: bpcms_yt_movies
+  columns:
+    idbpcms_yt_movies:
+      type: integer(4)
+      fixed: false
+      unsigned: false
+      primary: true
+      autoincrement: true
+    title:
+      type: string(255)
+      fixed: false
+      unsigned: false
+      primary: false
+      notnull: false
+      autoincrement: false
+    description:
+      type: string()
+      fixed: false
+      unsigned: false
+      primary: false
+      notnull: false
+      autoincrement: false
+    avatar:
+      type: string(45)
+      fixed: false
+      unsigned: false
+      primary: false
+      notnull: false
+      autoincrement: false
+    created_at:
+      type: string(45)
+      fixed: false
+      unsigned: false
+      primary: false
+      notnull: false
+      autoincrement: false
+    publication:
+      type: integer(4)
+      fixed: false
+      unsigned: false
+      primary: false
+      default: '0'
+      notnull: false
+      autoincrement: false
+    bpcms_yt_catalog_idbpcms_yt_catalog:
+      type: integer(4)
+      fixed: false
+      unsigned: false
+      primary: false
+      notnull: true
+      autoincrement: false
+    recommended:
+      type: integer(4)
+      fixed: false
+      unsigned: false
+      primary: false
+      default: '0'
+      notnull: false
+      autoincrement: false
+    youtube_iframe:
+      type: string()
+      fixed: false
+      unsigned: false
+      primary: false
+      notnull: false
+      autoincrement: false
+  relations:
+    BpcmsYtCatalog:
+      local: bpcms_yt_catalog_idbpcms_yt_catalog
+      foreign: idbpcms_yt_catalog
+      type: one
+    BpcmsYtMoviesI18n:
+      local: idbpcms_yt_movies
+      foreign: bpcms_yt_movies_idbpcms_yt_movies
+      type: many
+BpcmsYtMoviesI18n:
+  connection: doctrine
+  tableName: bpcms_yt_movies_i18n
+  columns:
+    bpcms_yt_movies_idbpcms_yt_movies:
+      type: integer(4)
+      fixed: false
+      unsigned: false
+      primary: true
+      autoincrement: false
+    bpcms_lang_install_signature:
+      type: string(45)
+      fixed: false
+      unsigned: false
+      primary: true
+      autoincrement: false
+    lang_title:
+      type: string(255)
+      fixed: false
+      unsigned: false
+      primary: false
+      notnull: false
+      autoincrement: false
+    lang_description:
+      type: string()
+      fixed: false
+      unsigned: false
+      primary: false
+      notnull: false
+      autoincrement: false
+  relations:
+    BpcmsLangInstall:
+      local: bpcms_lang_install_signature
+      foreign: signature
+      type: one
+    BpcmsYtMovies:
+      local: bpcms_yt_movies_idbpcms_yt_movies
+      foreign: idbpcms_yt_movies
+      type: one
+Cart:
+  connection: doctrine
+  tableName: cart
+  columns:
+    idcart:
+      type: integer(4)
+      fixed: false
+      unsigned: false
+      primary: true
+      autoincrement: true
+    cart_name:
+      type: string(255)
+      fixed: false
+      unsigned: false
+      primary: false
+      notnull: false
+      autoincrement: false
+    title_alt:
+      type: string(255)
+      fixed: false
+      unsigned: false
+      primary: false
+      notnull: false
+      autoincrement: false
+    title_page:
+      type: string(255)
+      fixed: false
+      unsigned: false
+      primary: false
+      notnull: false
+      autoincrement: false
+    no_page:
+      type: integer(4)
+      fixed: false
+      unsigned: false
+      primary: false
+      default: '0'
+      notnull: false
+      autoincrement: false
+    publication:
+      type: integer(4)
+      fixed: false
+      unsigned: false
+      primary: false
+      default: '0'
+      notnull: false
+      autoincrement: false
+    position:
+      type: string(45)
+      fixed: false
+      unsigned: false
+      primary: false
+      default: '0'
+      notnull: false
+      autoincrement: false
+    position_order:
+      type: integer(4)
+      fixed: false
+      unsigned: false
+      primary: false
+      default: '0'
+      notnull: false
+      autoincrement: false
+    link_active:
+      type: integer(4)
+      fixed: false
+      unsigned: false
+      primary: false
+      default: '0'
+      notnull: false
+      autoincrement: false
+    cart_name_title:
+      type: string(45)
+      fixed: false
+      unsigned: false
+      primary: false
+      notnull: false
+      autoincrement: false
+    redirect_to_url:
+      type: string(255)
+      fixed: false
+      unsigned: false
+      primary: false
+      notnull: false
+      autoincrement: false
+    redirect_to_url_blank_open:
+      type: string(45)
+      fixed: false
+      unsigned: false
+      primary: false
+      notnull: false
+      autoincrement: false
+    position_row:
+      type: string(45)
+      fixed: false
+      unsigned: false
+      primary: false
+      notnull: false
+      autoincrement: false
+    name_url:
+      type: string(255)
+      fixed: false
+      unsigned: false
+      primary: false
+      notnull: false
+      autoincrement: false
+  relations:
+    BpcmsCartI18n:
+      local: idcart
+      foreign: cart_idcart
+      type: many
+    Page:
+      local: idcart
+      foreign: cart_idcart
+      type: many
+Configuration:
+  connection: doctrine
+  tableName: configuration
+  columns:
+    idconfiguration:
+      type: integer(4)
+      fixed: false
+      unsigned: false
+      primary: true
+      autoincrement: true
+    config_name:
+      type: string(255)
+      fixed: false
+      unsigned: false
+      primary: false
+      notnull: false
+      autoincrement: false
+    config_option:
+      type: string(255)
+      fixed: false
+      unsigned: false
+      primary: false
+      notnull: false
+      autoincrement: false
+    config_value:
+      type: string()
+      fixed: false
+      unsigned: false
+      primary: false
+      notnull: false
+      autoincrement: false
+    config_on:
+      type: integer(4)
+      fixed: false
+      unsigned: false
+      primary: false
+      default: '0'
+      notnull: false
+      autoincrement: false
+Download:
+  connection: doctrine
+  tableName: download
+  columns:
+    iddownload:
+      type: integer(4)
+      fixed: false
+      unsigned: false
+      primary: true
+      autoincrement: true
+    file_name:
+      type: string(45)
+      fixed: false
+      unsigned: false
+      primary: false
+      notnull: false
+      autoincrement: false
+    title:
+      type: string(255)
+      fixed: false
+      unsigned: false
+      primary: false
+      notnull: false
+      autoincrement: false
+    publication:
+      type: integer(4)
+      fixed: false
+      unsigned: false
+      primary: false
+      notnull: false
+      autoincrement: false
+    download_catalog_iddownload_catalog:
+      type: integer(4)
+      fixed: false
+      unsigned: false
+      primary: false
+      notnull: true
+      autoincrement: false
+    url_to_file:
+      type: string(255)
+      fixed: false
+      unsigned: false
+      primary: false
+      notnull: false
+      autoincrement: false
+  relations:
+    DownloadCatalog:
+      local: download_catalog_iddownload_catalog
+      foreign: iddownload_catalog
+      type: one
+    BpcmsDownloadI18n:
+      local: iddownload
+      foreign: download_iddownload
+      type: many
+DownloadCatalog:
+  connection: doctrine
+  tableName: download_catalog
+  columns:
+    iddownload_catalog:
+      type: integer(4)
+      fixed: false
+      unsigned: false
+      primary: true
+      autoincrement: true
+    name:
+      type: string(255)
+      fixed: false
+      unsigned: false
+      primary: false
+      notnull: false
+      autoincrement: false
+    publication:
+      type: integer(4)
+      fixed: false
+      unsigned: false
+      primary: false
+      notnull: false
+      autoincrement: false
+  relations:
+    BpcmsDownloadCatalogI18n:
+      local: iddownload_catalog
+      foreign: download_catalog_iddownload_catalog
+      type: many
+    Download:
+      local: iddownload_catalog
+      foreign: download_catalog_iddownload_catalog
+      type: many
+Gallery:
+  connection: doctrine
+  tableName: gallery
+  columns:
+    idgallery:
+      type: integer(4)
+      fixed: false
+      unsigned: false
+      primary: true
+      autoincrement: true
+    file_name:
+      type: string(255)
+      fixed: false
+      unsigned: false
+      primary: false
+      notnull: false
+      autoincrement: false
+    file_title:
+      type: string(255)
+      fixed: false
+      unsigned: false
+      primary: false
+      notnull: false
+      autoincrement: false
+    gallery_category_idgallery_category:
+      type: integer(4)
+      fixed: false
+      unsigned: false
+      primary: false
+      notnull: true
+      autoincrement: false
+    redirect_to_url:
+      type: string(255)
+      fixed: false
+      unsigned: false
+      primary: false
+      notnull: false
+      autoincrement: false
+    default_gallery:
+      type: integer(4)
+      fixed: false
+      unsigned: false
+      primary: false
+      default: '0'
+      notnull: false
+      autoincrement: false
+    default_gallery_off:
+      type: integer(4)
+      fixed: false
+      unsigned: false
+      primary: false
+      default: '0'
+      notnull: false
+      autoincrement: false
+    position_row:
+      type: integer(4)
+      fixed: false
+      unsigned: false
+      primary: false
+      notnull: false
+      autoincrement: false
+  relations:
+    GalleryCategory:
+      local: gallery_category_idgallery_category
+      foreign: idgallery_category
+      type: one
+    BpcmsGalleryI18n:
+      local: idgallery
+      foreign: gallery_idgallery
+      type: many
+GalleryCatalog:
+  connection: doctrine
+  tableName: gallery_catalog
+  columns:
+    idgallery_catalog:
+      type: integer(4)
+      fixed: false
+      unsigned: false
+      primary: true
+      autoincrement: true
+    catalog_name:
+      type: string(255)
+      fixed: false
+      unsigned: false
+      primary: false
+      notnull: false
+      autoincrement: false
+    no_category:
+      type: integer(4)
+      fixed: false
+      unsigned: false
+      primary: false
+      default: '0'
+      notnull: false
+      autoincrement: false
+    publication:
+      type: integer(4)
+      fixed: false
+      unsigned: false
+      primary: false
+      default: '0'
+      notnull: false
+      autoincrement: false
+  relations:
+    BpcmsGalleryCatalogI18n:
+      local: idgallery_catalog
+      foreign: gallery_catalog_idgallery_catalog
+      type: many
+    GalleryCategory:
+      local: idgallery_catalog
+      foreign: gallery_catalog_idgallery_catalog
+      type: many
+GalleryCategory:
+  connection: doctrine
+  tableName: gallery_category
+  columns:
+    idgallery_category:
+      type: integer(4)
+      fixed: false
+      unsigned: false
+      primary: true
+      autoincrement: true
+    category_name:
+      type: string(255)
+      fixed: false
+      unsigned: false
+      primary: false
+      notnull: false
+      autoincrement: false
+    publication:
+      type: integer(4)
+      fixed: false
+      unsigned: false
+      primary: false
+      default: '0'
+      notnull: false
+      autoincrement: false
+    gallery_catalog_idgallery_catalog:
+      type: integer(4)
+      fixed: false
+      unsigned: false
+      primary: false
+      notnull: true
+      autoincrement: false
+  relations:
+    GalleryCatalog:
+      local: gallery_catalog_idgallery_catalog
+      foreign: idgallery_catalog
+      type: one
+    BpcmsGalleryCategoryI18n:
+      local: idgallery_category
+      foreign: gallery_category_idgallery_category
+      type: many
+    Gallery:
+      local: idgallery_category
+      foreign: gallery_category_idgallery_category
+      type: many
+    GalleryToPage:
+      local: idgallery_category
+      foreign: gallery_category_idgallery_category
+      type: many
+    GalleryToPost:
+      local: idgallery_category
+      foreign: gallery_category_idgallery_category
+      type: many
+GalleryToPage:
+  connection: doctrine
+  tableName: gallery_to_page
+  columns:
+    id:
+      type: integer(8)
+      autoincrement: true
+      primary: true
+    page_idpage:
+      type: integer(4)
+      fixed: false
+      unsigned: false
+      primary: false
+      notnull: true
+      autoincrement: false
+    gallery_category_idgallery_category:
+      type: integer(4)
+      fixed: false
+      unsigned: false
+      primary: false
+      notnull: true
+      autoincrement: false
+  relations:
+    GalleryCategory:
+      local: gallery_category_idgallery_category
+      foreign: idgallery_category
+      type: one
+    Page:
+      local: page_idpage
+      foreign: idpage
+      type: one
+GalleryToPost:
+  connection: doctrine
+  tableName: gallery_to_post
+  columns:
+    id:
+      type: integer(8)
+      autoincrement: true
+      primary: true
+    post_idpost:
+      type: integer(4)
+      fixed: false
+      unsigned: false
+      primary: false
+      notnull: true
+      autoincrement: false
+    gallery_category_idgallery_category:
+      type: integer(4)
+      fixed: false
+      unsigned: false
+      primary: false
+      notnull: true
+      autoincrement: false
+  relations:
+    GalleryCategory:
+      local: gallery_category_idgallery_category
+      foreign: idgallery_category
+      type: one
+    Post:
+      local: post_idpost
+      foreign: idpost
+      type: one
+MittendrinStats:
+  connection: doctrine
+  tableName: mittendrin_stats
+  columns:
+    idmittendrin_stats:
+      type: integer(4)
+      fixed: false
+      unsigned: false
+      primary: true
+      autoincrement: true
+    ipaddr:
+      type: string(45)
+      fixed: false
+      unsigned: false
+      primary: false
+      notnull: false
+      autoincrement: false
+    open:
+      type: string(45)
+      fixed: false
+      unsigned: false
+      primary: false
+      notnull: false
+      autoincrement: false
+    close:
+      type: string(45)
+      fixed: false
+      unsigned: false
+      primary: false
+      notnull: false
+      autoincrement: false
+    created_at:
+      type: string(45)
+      fixed: false
+      unsigned: false
+      primary: false
+      notnull: false
+      autoincrement: false
+    http_user_agent:
+      type: string(255)
+      fixed: false
+      unsigned: false
+      primary: false
+      notnull: false
+      autoincrement: false
+    city_name:
+      type: string(255)
+      fixed: false
+      unsigned: false
+      primary: false
+      notnull: false
+      autoincrement: false
+    country_name:
+      type: string(255)
+      fixed: false
+      unsigned: false
+      primary: false
+      notnull: false
+      autoincrement: false
+    radio_station_idradio_station:
+      type: integer(4)
+      fixed: false
+      unsigned: false
+      primary: false
+      notnull: true
+      autoincrement: false
+  relations:
+    RadioStation:
+      local: radio_station_idradio_station
+      foreign: idradio_station
+      type: one
+Page:
+  connection: doctrine
+  tableName: page
+  columns:
+    idpage:
+      type: integer(4)
+      fixed: false
+      unsigned: false
+      primary: true
+      autoincrement: true
+    page_name:
+      type: string(255)
+      fixed: false
+      unsigned: false
+      primary: false
+      notnull: false
+      autoincrement: false
+    page_title:
+      type: string(255)
+      fixed: false
+      unsigned: false
+      primary: false
+      notnull: false
+      autoincrement: false
+    body:
+      type: string()
+      fixed: false
+      unsigned: false
+      primary: false
+      notnull: false
+      autoincrement: false
+    cart_idcart:
+      type: integer(4)
+      fixed: false
+      unsigned: false
+      primary: false
+      notnull: true
+      autoincrement: false
+    publication:
+      type: integer(4)
+      fixed: false
+      unsigned: false
+      primary: false
+      default: '0'
+      notnull: false
+      autoincrement: false
+    position:
+      type: integer(4)
+      fixed: false
+      unsigned: false
+      primary: false
+      default: '0'
+      notnull: false
+      autoincrement: false
+    position_order:
+      type: integer(4)
+      fixed: false
+      unsigned: false
+      primary: false
+      default: '0'
+      notnull: false
+      autoincrement: false
+    rows:
+      type: integer(4)
+      fixed: false
+      unsigned: false
+      primary: false
+      default: '0'
+      notnull: false
+      autoincrement: false
+    page_default:
+      type: integer(4)
+      fixed: false
+      unsigned: false
+      primary: false
+      notnull: false
+      autoincrement: false
+    position_row:
+      type: string(45)
+      fixed: false
+      unsigned: false
+      primary: false
+      notnull: false
+      autoincrement: false
+    redirect_to_url:
+      type: string(255)
+      fixed: false
+      unsigned: false
+      primary: false
+      notnull: false
+      autoincrement: false
+    redirect_to_url_blank_open:
+      type: integer(4)
+      fixed: false
+      unsigned: false
+      primary: false
+      notnull: false
+      autoincrement: false
+    page_name_url:
+      type: string(255)
+      fixed: false
+      unsigned: false
+      primary: false
+      notnull: false
+      autoincrement: false
+  relations:
+    Cart:
+      local: cart_idcart
+      foreign: idcart
+      type: one
+    BpcmsPageI18n:
+      local: idpage
+      foreign: page_idpage
+      type: many
+    BpcmsPlaylist:
+      local: idpage
+      foreign: page_idpage
+      type: many
+    GalleryToPage:
+      local: idpage
+      foreign: page_idpage
+      type: many
+    PageBackup:
+      local: idpage
+      foreign: page_idpage
+      type: many
+PageBackup:
+  connection: doctrine
+  tableName: page_backup
+  columns:
+    idpage_backup:
+      type: integer(4)
+      fixed: false
+      unsigned: false
+      primary: true
+      autoincrement: true
+    body:
+      type: string()
+      fixed: false
+      unsigned: false
+      primary: false
+      notnull: false
+      autoincrement: false
+    page_idpage:
+      type: integer(4)
+      fixed: false
+      unsigned: false
+      primary: false
+      notnull: true
+      autoincrement: false
+    created_at:
+      type: string(45)
+      fixed: false
+      unsigned: false
+      primary: false
+      notnull: false
+      autoincrement: false
+  relations:
+    Page:
+      local: page_idpage
+      foreign: idpage
+      type: one
+Post:
+  connection: doctrine
+  tableName: post
+  columns:
+    idpost:
+      type: integer(4)
+      fixed: false
+      unsigned: false
+      primary: true
+      autoincrement: true
+    title:
+      type: string(255)
+      fixed: false
+      unsigned: false
+      primary: false
+      notnull: false
+      autoincrement: false
+    description:
+      type: string()
+      fixed: false
+      unsigned: false
+      primary: false
+      notnull: false
+      autoincrement: false
+    created_at:
+      type: string(100)
+      fixed: false
+      unsigned: false
+      primary: false
+      default: '0'
+      notnull: false
+      autoincrement: false
+    archiv:
+      type: integer(4)
+      fixed: false
+      unsigned: false
+      primary: false
+      notnull: false
+      autoincrement: false
+    newsletter:
+      type: integer(4)
+      fixed: false
+      unsigned: false
+      primary: false
+      default: '0'
+      notnull: false
+      autoincrement: false
+    avatar:
+      type: string(45)
+      fixed: false
+      unsigned: false
+      primary: false
+      notnull: false
+      autoincrement: false
+    post_catalog_idpost_catalog:
+      type: integer(4)
+      fixed: false
+      unsigned: false
+      primary: false
+      notnull: true
+      autoincrement: false
+    users_idusers:
+      type: integer(4)
+      fixed: false
+      unsigned: false
+      primary: false
+      notnull: true
+      autoincrement: false
+    column_type:
+      type: string(45)
+      fixed: false
+      unsigned: false
+      primary: false
+      notnull: false
+      autoincrement: false
+    recommended:
+      type: integer(4)
+      fixed: false
+      unsigned: false
+      primary: false
+      default: '0'
+      notnull: false
+      autoincrement: false
+    title_header:
+      type: string(255)
+      fixed: false
+      unsigned: false
+      primary: false
+      notnull: false
+      autoincrement: false
+    title_recommended:
+      type: string(255)
+      fixed: false
+      unsigned: false
+      primary: false
+      notnull: false
+      autoincrement: false
+    publication:
+      type: integer(4)
+      fixed: false
+      unsigned: false
+      primary: false
+      default: '0'
+      notnull: false
+      autoincrement: false
+  relations:
+    PostCatalog:
+      local: post_catalog_idpost_catalog
+      foreign: idpost_catalog
+      type: one
+    Users:
+      local: users_idusers
+      foreign: idusers
+      type: one
+    BpcmsPostI18n:
+      local: idpost
+      foreign: post_idpost
+      type: many
+    GalleryToPost:
+      local: idpost
+      foreign: post_idpost
+      type: many
+    PostHasPostTags:
+      local: idpost
+      foreign: post_idpost
+      type: many
+PostCatalog:
+  connection: doctrine
+  tableName: post_catalog
+  columns:
+    idpost_catalog:
+      type: integer(4)
+      fixed: false
+      unsigned: false
+      primary: true
+      autoincrement: true
+    name:
+      type: string(255)
+      fixed: false
+      unsigned: false
+      primary: false
+      notnull: false
+      autoincrement: false
+    publication:
+      type: integer(4)
+      fixed: false
+      unsigned: false
+      primary: false
+      default: '0'
+      notnull: false
+      autoincrement: false
+    homepage_publication:
+      type: integer(4)
+      fixed: false
+      unsigned: false
+      primary: false
+      default: '0'
+      notnull: false
+      autoincrement: false
+    homepage_row:
+      type: integer(4)
+      fixed: false
+      unsigned: false
+      primary: false
+      default: '0'
+      notnull: false
+      autoincrement: false
+    font_color:
+      type: string(45)
+      fixed: false
+      unsigned: false
+      primary: false
+      notnull: false
+      autoincrement: false
+  relations:
+    BpcmsPostCatalogI18n:
+      local: idpost_catalog
+      foreign: post_catalog_idpost_catalog
+      type: many
+    Post:
+      local: idpost_catalog
+      foreign: post_catalog_idpost_catalog
+      type: many
+PostHasPostTags:
+  connection: doctrine
+  tableName: post_has_post_tags
+  columns:
+    post_idpost:
+      type: integer(4)
+      fixed: false
+      unsigned: false
+      primary: true
+      autoincrement: false
+    post_tags_idpost_tags:
+      type: integer(4)
+      fixed: false
+      unsigned: false
+      primary: true
+      autoincrement: false
+  relations:
+    Post:
+      local: post_idpost
+      foreign: idpost
+      type: one
+    PostTags:
+      local: post_tags_idpost_tags
+      foreign: idpost_tags
+      type: one
+PostTags:
+  connection: doctrine
+  tableName: post_tags
+  columns:
+    idpost_tags:
+      type: integer(4)
+      fixed: false
+      unsigned: false
+      primary: true
+      autoincrement: true
+    name:
+      type: string(255)
+      fixed: false
+      unsigned: false
+      primary: false
+      notnull: false
+      autoincrement: false
+    name_url:
+      type: string(255)
+      fixed: false
+      unsigned: false
+      primary: false
+      notnull: false
+      autoincrement: false
+  relations:
+    PostHasPostTags:
+      local: idpost_tags
+      foreign: post_tags_idpost_tags
+      type: many
+RadioStation:
+  connection: doctrine
+  tableName: radio_station
+  columns:
+    idradio_station:
+      type: integer(4)
+      fixed: false
+      unsigned: false
+      primary: true
+      autoincrement: true
+    name:
+      type: string(255)
+      fixed: false
+      unsigned: false
+      primary: false
+      notnull: false
+      autoincrement: false
+    title:
+      type: string(255)
+      fixed: false
+      unsigned: false
+      primary: false
+      notnull: false
+      autoincrement: false
+    description:
+      type: string()
+      fixed: false
+      unsigned: false
+      primary: false
+      notnull: false
+      autoincrement: false
+    publication:
+      type: integer(4)
+      fixed: false
+      unsigned: false
+      primary: false
+      default: '0'
+      notnull: false
+      autoincrement: false
+    position_row:
+      type: integer(4)
+      fixed: false
+      unsigned: false
+      primary: false
+      default: '0'
+      notnull: false
+      autoincrement: false
+    avatar:
+      type: string(45)
+      fixed: false
+      unsigned: false
+      primary: false
+      notnull: false
+      autoincrement: false
+  relations:
+    MittendrinStats:
+      local: idradio_station
+      foreign: radio_station_idradio_station
+      type: many
+    RadioStationI18n:
+      local: idradio_station
+      foreign: radio_station_idradio_station
+      type: many
+    RadioStationSchedule:
+      local: idradio_station
+      foreign: radio_station_idradio_station
+      type: many
+RadioStationI18n:
+  connection: doctrine
+  tableName: radio_station_i18n
+  columns:
+    radio_station_idradio_station:
+      type: integer(4)
+      fixed: false
+      unsigned: false
+      primary: true
+      autoincrement: false
+    bpcms_lang_install_signature:
+      type: string(45)
+      fixed: false
+      unsigned: false
+      primary: true
+      autoincrement: false
+    lang_name:
+      type: string(255)
+      fixed: false
+      unsigned: false
+      primary: false
+      notnull: false
+      autoincrement: false
+    lang_title:
+      type: string(255)
+      fixed: false
+      unsigned: false
+      primary: false
+      notnull: false
+      autoincrement: false
+    lang_description:
+      type: string()
+      fixed: false
+      unsigned: false
+      primary: false
+      notnull: false
+      autoincrement: false
+  relations:
+    BpcmsLangInstall:
+      local: bpcms_lang_install_signature
+      foreign: signature
+      type: one
+    RadioStation:
+      local: radio_station_idradio_station
+      foreign: idradio_station
+      type: one
+RadioStationSchedule:
+  connection: doctrine
+  tableName: radio_station_schedule
+  columns:
+    idradio_station_schedule:
+      type: integer(4)
+      fixed: false
+      unsigned: false
+      primary: true
+      autoincrement: true
+    title:
+      type: string(255)
+      fixed: false
+      unsigned: false
+      primary: false
+      notnull: false
+      autoincrement: false
+    description:
+      type: string(255)
+      fixed: false
+      unsigned: false
+      primary: false
+      notnull: false
+      autoincrement: false
+    broadcast_hour:
+      type: string(45)
+      fixed: false
+      unsigned: false
+      primary: false
+      notnull: false
+      autoincrement: false
+    broadcast_day_a_week:
+      type: string(45)
+      fixed: false
+      unsigned: false
+      primary: false
+      notnull: false
+      autoincrement: false
+    position_row:
+      type: integer(4)
+      fixed: false
+      unsigned: false
+      primary: false
+      default: '0'
+      notnull: false
+      autoincrement: false
+    radio_station_idradio_station:
+      type: integer(4)
+      fixed: false
+      unsigned: false
+      primary: false
+      notnull: true
+      autoincrement: false
+    publication:
+      type: integer(4)
+      fixed: false
+      unsigned: false
+      primary: false
+      default: '0'
+      notnull: false
+      autoincrement: false
+  relations:
+    RadioStation:
+      local: radio_station_idradio_station
+      foreign: idradio_station
+      type: one
+    RadioStationScheduleI18n:
+      local: idradio_station_schedule
+      foreign: radio_station_schedule_idradio_station_schedule
+      type: many
+RadioStationScheduleI18n:
+  connection: doctrine
+  tableName: radio_station_schedule_i18n
+  columns:
+    radio_station_schedule_idradio_station_schedule:
+      type: integer(4)
+      fixed: false
+      unsigned: false
+      primary: true
+      autoincrement: false
+    bpcms_lang_install_signature:
+      type: string(45)
+      fixed: false
+      unsigned: false
+      primary: true
+      autoincrement: false
+    lang_title:
+      type: string(255)
+      fixed: false
+      unsigned: false
+      primary: false
+      notnull: false
+      autoincrement: false
+    lang_description:
+      type: string(255)
+      fixed: false
+      unsigned: false
+      primary: false
+      notnull: false
+      autoincrement: false
+  relations:
+    BpcmsLangInstall:
+      local: bpcms_lang_install_signature
+      foreign: signature
+      type: one
+    RadioStationSchedule:
+      local: radio_station_schedule_idradio_station_schedule
+      foreign: idradio_station_schedule
+      type: one
+Slideshow:
+  connection: doctrine
+  tableName: slideshow
+  columns:
+    idslideshow:
+      type: integer(4)
+      fixed: false
+      unsigned: false
+      primary: true
+      autoincrement: true
+    file_name:
+      type: string(255)
+      fixed: false
+      unsigned: false
+      primary: false
+      notnull: false
+      autoincrement: false
+    body_h1:
+      type: string(255)
+      fixed: false
+      unsigned: false
+      primary: false
+      notnull: false
+      autoincrement: false
+    body_p:
+      type: string(255)
+      fixed: false
+      unsigned: false
+      primary: false
+      notnull: false
+      autoincrement: false
+    publication:
+      type: integer(4)
+      fixed: false
+      unsigned: false
+      primary: false
+      default: '0'
+      notnull: false
+      autoincrement: false
+    default_position:
+      type: integer(4)
+      fixed: false
+      unsigned: false
+      primary: false
+      default: '0'
+      notnull: false
+      autoincrement: false
+    body_link:
+      type: string(255)
+      fixed: false
+      unsigned: false
+      primary: false
+      notnull: false
+      autoincrement: false
+  relations:
+    BpcmsSlideshowI18n:
+      local: idslideshow
+      foreign: slideshow_idslideshow
+      type: many
+Stimme:
+  connection: doctrine
+  tableName: stimme
+  columns:
+    idstimme:
+      type: integer(4)
+      fixed: false
+      unsigned: false
+      primary: true
+      autoincrement: true
+    date:
+      type: date(25)
+      fixed: false
+      unsigned: false
+      primary: false
+      notnull: false
+      autoincrement: false
+    description:
+      type: string()
+      fixed: false
+      unsigned: false
+      primary: false
+      notnull: false
+      autoincrement: false
+    created_at:
+      type: timestamp(25)
+      fixed: false
+      unsigned: false
+      primary: false
+      notnull: false
+      autoincrement: false
+    publication:
+      type: integer(4)
+      fixed: false
+      unsigned: false
+      primary: false
+      default: '0'
+      notnull: false
+      autoincrement: false
+    name:
+      type: string(255)
+      fixed: false
+      unsigned: false
+      primary: false
+      notnull: false
+      autoincrement: false
+    city:
+      type: string(95)
+      fixed: false
+      unsigned: false
+      primary: false
+      notnull: false
+      autoincrement: false
+    age:
+      type: string(45)
+      fixed: false
+      unsigned: false
+      primary: false
+      notnull: false
+      autoincrement: false
+    occasion:
+      type: string(45)
+      fixed: false
+      unsigned: false
+      primary: false
+      notnull: false
+      autoincrement: false
+    when_birthday:
+      type: string(45)
+      fixed: false
+      unsigned: false
+      primary: false
+      notnull: false
+      autoincrement: false
+    music_service:
+      type: string(255)
+      fixed: false
+      unsigned: false
+      primary: false
+      notnull: false
+      autoincrement: false
+    submit_requests:
+      type: string(255)
+      fixed: false
+      unsigned: false
+      primary: false
+      default: ''
+      notnull: true
+      autoincrement: false
+    webusers_idwebusers:
+      type: integer(4)
+      fixed: false
+      unsigned: false
+      primary: false
+      notnull: true
+      autoincrement: false
+  relations:
+    Webusers:
+      local: webusers_idwebusers
+      foreign: idwebusers
+      type: one
+Users:
+  connection: doctrine
+  tableName: users
+  columns:
+    idusers:
+      type: integer(4)
+      fixed: false
+      unsigned: false
+      primary: true
+      autoincrement: true
+    name:
+      type: string(255)
+      fixed: false
+      unsigned: false
+      primary: false
+      notnull: false
+      autoincrement: false
+    lastname:
+      type: string(255)
+      fixed: false
+      unsigned: false
+      primary: false
+      notnull: false
+      autoincrement: false
+    mail:
+      type: string(255)
+      fixed: false
+      unsigned: false
+      primary: false
+      notnull: false
+      autoincrement: false
+    active:
+      type: integer(4)
+      fixed: false
+      unsigned: false
+      primary: false
+      default: '0'
+      notnull: false
+      autoincrement: false
+    passwd:
+      type: string(255)
+      fixed: false
+      unsigned: false
+      primary: false
+      notnull: false
+      autoincrement: false
+  relations:
+    Post:
+      local: idusers
+      foreign: users_idusers
+      type: many
+Webusers:
+  connection: doctrine
+  tableName: webusers
+  columns:
+    idwebusers:
+      type: integer(4)
+      fixed: false
+      unsigned: false
+      primary: true
+      autoincrement: true
+    email:
+      type: string(255)
+      fixed: false
+      unsigned: false
+      primary: false
+      notnull: false
+      autoincrement: false
+    passwd:
+      type: string(45)
+      fixed: false
+      unsigned: false
+      primary: false
+      default: '0'
+      notnull: false
+      autoincrement: false
+    name:
+      type: string(255)
+      fixed: false
+      unsigned: false
+      primary: false
+      notnull: false
+      autoincrement: false
+    lastname:
+      type: string(255)
+      fixed: false
+      unsigned: false
+      primary: false
+      notnull: false
+      autoincrement: false
+    active:
+      type: integer(4)
+      fixed: false
+      unsigned: false
+      primary: false
+      default: '0'
+      notnull: false
+      autoincrement: false
+    created_at:
+      type: string(45)
+      fixed: false
+      unsigned: false
+      primary: false
+      notnull: false
+      autoincrement: false
+    post_city_idpost_city:
+      type: integer(4)
+      fixed: false
+      unsigned: false
+      primary: false
+      default: '0'
+      notnull: true
+      autoincrement: false
+    default_city:
+      type: integer(4)
+      fixed: false
+      unsigned: false
+      primary: false
+      notnull: false
+      autoincrement: false
+    default_lang:
+      type: string(45)
+      fixed: false
+      unsigned: false
+      primary: false
+      notnull: false
+      autoincrement: false
+    reg_accept:
+      type: integer(4)
+      fixed: false
+      unsigned: false
+      primary: false
+      notnull: false
+      autoincrement: false
+    status:
+      type: string(255)
+      fixed: false
+      unsigned: false
+      primary: false
+      notnull: false
+      autoincrement: false
+  relations:
+    Stimme:
+      local: idwebusers
+      foreign: webusers_idwebusers
+      type: many

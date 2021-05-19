@@ -1,0 +1,7 @@
+all:
+  doctrine:
+    class: sfDoctrineDatabase
+    param:
+      dsn: 'mysql:host=localhost;dbname=mittendrin_page'
+      username: mittendrin_page
+      password: '4yG46t&xgawTSxbh'
