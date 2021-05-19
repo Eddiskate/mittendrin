@@ -7,7 +7,6 @@
         <meta name="keywords" content="<?php echo sfConfig::get('bpcms_page_keywords') ?>">
         <meta name="description" content="<?php echo sfConfig::get('bpcms_page_description') ?>">
         <meta name="author" content="<?php echo sfConfig::get('bpcms_page_author') ?>">
-
         <link href="/bootstrap/css/bootstrap.css" rel="stylesheet">
         <link href="/themes/mittendrin/css/main.css" rel="stylesheet">
         <link href='http://fonts.googleapis.com/css?family=Lato:300,400,700,300italic,400italic&subset=latin-ext'
@@ -15,7 +14,6 @@
         <link href='http://fonts.googleapis.com/css?family=Josefin+Sans:400,700italic&subset=latin,latin-ext' rel='stylesheet' type='text/css'>
         <link rel="stylesheet" href="/themes/mittendrin/plugin/plate/css/plate.css">
         <style>
-
             footer {
                 margin-top: 50px;
             }
