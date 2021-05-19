@@ -74,8 +74,9 @@ class homeActions extends sfActions
                 die;
             }
 
-            echo 'wysłane';die;
         }
+
+        echo 'wysłane';die;
 
         $this->getUser()->setFlash('success_mail', '<p id="success_mail">Dziękujemy za wysałanie wiadomości.<br> Skontaktujemy się z Państwem najszybciej jak będziemy mogli.</p>');
 
