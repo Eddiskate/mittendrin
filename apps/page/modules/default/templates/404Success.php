@@ -1,0 +1,1 @@
+<p align="center">Wybrana strona nie istnieje. Przepraszamy!</p>

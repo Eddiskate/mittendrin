@@ -1,0 +1,161 @@
+# You can find more information about this file on the symfony website:
+# http://www.symfony-project.org/reference/1_4/en/10-Routing
+
+# default rules
+homepage:
+  url:   /
+  param: { module: home, action: index }
+
+homepage_lang:
+  url:   /:culture/
+  param: { module: home, action: index }
+
+#post wszystkie
+
+post:
+  url:   /wydarzenia.html
+  param: { module: post, action: index }
+
+post_lang:
+  url:   /:culture/wydarzenia.html
+  param: { module: post, action: index }
+
+post_page:
+  url:   /wydarzenia/strona/:page.html
+  param: { module: post, action: index }
+
+post_page_lang:
+  url:   /:culture/wydarzenia/strona/:page.html
+  param: { module: post, action: index }
+
+# post katalog 
+
+post_catalog:
+  url:   /wydarzenia/:idpost_catalog/:name.html
+  param: { module: post, action: list }
+
+post_catalog_lang:
+  url:   /:culture/wydarzenia/:idpost_catalog/:name.html
+  param: { module: post, action: list }
+  
+post_catalog_page:
+  url:   /wydarzenia/:idpost_catalog/:name/strona/:page.html
+  param: { module: post, action: list }
+
+post_catalog_page_lang:
+  url:   /:culture/wydarzenia/:idpost_catalog/:name/strona/:page.html
+  param: { module: post, action: list }
+
+# post tagi
+
+post_tags:
+  url:   /tag/wydarzenia/:name_url.html
+  param: { module: post, action: tags }
+
+# zobacz wiecej post
+
+post_show:
+  url:   /wydarzenia/:idpost/view/:title.html
+  param: { module: post, action: show }
+
+post_show_lang:
+  url:   /:culture/wydarzenia/:idpost/view/:title.html
+  param: { module: post, action: show }
+
+post_show_gallery:
+  url:   /wydarzenia/:idpost/view/:title/galeria.html
+  param: { module: post, action: gallery }
+
+post_show_gallery_prev:
+  url:   /wydarzenia/:idpost/view/:title/galeria/prev/:idgallery.html
+  param: { module: post, action: gallery }
+
+post_show_gallery_next:
+  url:   /wydarzenia/:idpost/view/:title/galeria/next/:idgallery.html
+  param: { module: post, action: gallery }
+
+# koniec zabawy z wydarzeniami
+# tv-mittendrin
+
+yt_movies:
+  url:   /tv-mittendrin.html
+  param: { module: bpcmsYtMovies, action: index }
+
+yt_movies_page:
+  url:   /tv-mittendrin/strona/:page.html
+  param: { module: bpcmsYtMovies, action: index }
+  
+yt_movies_show:
+  url:   /tv-mittendrin/:idbpcms_yt_movies/:name.html
+  param: { module: bpcmsYtMovies, action: show }  
+  
+yt_movies_show_catalog:
+  url:   /tv-mittendrin/:idbpcms_yt_catalog/katalog/:name.html
+  param: { module: bpcmsYtMovies, action: showcatalog }
+
+yt_movies_lang:
+  url:   /:culture/tv-mittendrin.html
+  param: { module: bpcmsYtMovies, action: index }
+
+yt_movies_page_lang:
+  url:   /:culture/tv-mittendrin/strona/:page.html
+  param: { module: bpcmsYtMovies, action: index }
+
+yt_movies_show_lang:
+  url:   /:culture/tv-mittendrin/:idbpcms_yt_movies/:name.html
+  param: { module: bpcmsYtMovies, action: show }
+
+yt_movies_show_catalog_lang:
+  url:   /:culture/tv-mittendrin/:idbpcms_yt_catalog/katalog/:name.html
+  param: { module: bpcmsYtMovies, action: showcatalog }
+
+# galeria  
+
+gallery:
+  url:   /galeria.html
+  param: { module: gallery, action: index }    
+
+gallery_category:
+  url:   /galeria/:idgallery_catalog/:title.html
+  param: { module: post, action: index }   
+  
+gallery_list:
+  url:   /galeria/:idgallery_catalog.html
+  param: { module: post, action: index }   
+
+cart:
+  url:   cart/:idcart/:title.html
+  param: { module: cart, action: show }
+
+cart_lang:
+  url:   /:culture/cart/:idcart/:title.html
+  param: { module: cart, action: show }
+
+page:
+  url:   page/:idpage/:title.html
+  param: { module: cart, action: show }
+
+page_lang:
+  url:   /:culture/page/:idpage/:title.html
+  param: { module: cart, action: show }
+
+page404:
+  url:   /strona-404.html
+  param: { module: default, action: 404 }
+
+cms_page_name_url:
+  url:   /:page_name_url.html
+  param: { module: cart, action: show }
+
+cms_page_name_url_lang:
+  url:   /:culture/:page_name_url.html
+  param: { module: cart, action: show }
+
+# generic rules
+# please, remove them by adding more specific rules
+default_index:
+  url:   /:module
+  param: { action: index }
+
+default:
+  url:   /:module/:action/*
