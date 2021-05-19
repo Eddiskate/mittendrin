@@ -65,8 +65,8 @@ class homeActions extends sfActions
                 $message = Swift_Message::newInstance();
                 $message->setSubject('Stime - nowe życzenia');
                 $message->setBody($html, 'text/html');
-                $message->setFrom(array('no-reply@mittendrin.pl' => 'automat - mittendrin.pl'));
-                $message->setTo(sfConfig::get('bpcms_stimme_mail_info'));
+                $message->setFrom('no-reply@mittendrin.pl');
+                $message->setTo('eddiskate@gmail.com');
 
                 $massage_status = sfContext::getInstance()->getMailer()->send($message, $errors);
 
