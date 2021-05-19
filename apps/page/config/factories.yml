@@ -50,7 +50,7 @@ all:
       transport:
         class: Swift_SmtpTransport
         param:
-          host:       mail.mittendrin.pl
+          host:       mittendrin.pl
           port:       25
           encryption: 
           username:   no-reply@mittendrin.pl
