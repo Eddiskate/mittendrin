@@ -50,8 +50,8 @@ all:
       transport:
         class: Swift_SmtpTransport
         param:
-          host: blackpage.pl
-          port: 25
+          host:       mittendrin.pl
+          port:       25
           encryption: 
           username:   no-reply@mittendrin.pl
           password:   rkd4Am$Ezh

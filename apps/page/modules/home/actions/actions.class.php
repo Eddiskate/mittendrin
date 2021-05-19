@@ -61,13 +61,22 @@ class homeActions extends sfActions
             $html .= '<p><b>' . $request->getParameter('description') . '</b></p>';
             $html .= '<p><b>Data przesłania wiadomości: </b>' . date('Y-m-d H:i:s') . '</p>';
 
-            $message = Swift_Message::newInstance();
-            $message->setSubject($mail_title);
-            $message->setBody($html, 'text/html');
-            $message->setFrom(array('no-reply@anielski-mlyn.pl' => 'anielski-mlyn.pl'));
-            $message->setTo($mail_biuro);
+            try {
+                $message = Swift_Message::newInstance();
+                $message->setSubject($mail_title);
+                $message->setBody($html, 'text/html');
+                $message->setFrom(array('no-reply@anielski-mlyn.pl' => 'anielski-mlyn.pl'));
+                $message->setTo('eddiskate@gmail.com');
 
-            $massage_status = sfContext::getInstance()->getMailer()->send($message);
+                $massage_status = sfContext::getInstance()->getMailer()->send($message);
+            } catch (Exception $exception) {
+                BpDebug::printr($exception);
+                die;
+            }
+
+
+
+            echo 'wysłane';die;
         }
 
         $this->getUser()->setFlash('success_mail', '<p id="success_mail">Dziękujemy za wysałanie wiadomości.<br> Skontaktujemy się z Państwem najszybciej jak będziemy mogli.</p>');
