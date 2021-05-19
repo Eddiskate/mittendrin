@@ -70,6 +70,7 @@ class homeActions extends sfActions
 
                 $massage_status = sfContext::getInstance()->getMailer()->send($message, $errors);
 
+                echo $massage_status;die;
                 BpDebug::printr($errors);
 
                 echo 'zostało wysłane';die;
